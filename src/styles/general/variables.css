@@ -9,6 +9,9 @@
 
 	/**TEXT*/
 	--main-font: "Manrope", sans-serif;
+	--lg-text: 3rem;
+	--md-text: 2rem;
+	--sm-text: 1rem;
 
 	/**WIDTH & HEIGHTS*/
 	--container-width: 1200px;
@@ -17,5 +20,8 @@
 	--page-padding: 2em;
 
 	/**UTILITY*/
+	--card-radius: 30px;
 	--simple-shadow: 5px 15px 20px 5px rgba(0, 0, 0, 0.5);
+	--normal-gap: 1em;
+	--small-gap: 0.5em;
 }

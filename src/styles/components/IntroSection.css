@@ -4,23 +4,23 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1em;
+	gap: var(--normal-gap);
 }
 
 .intro__text {
 	line-height: 1.5;
-	font-size: 2rem;
+	font-size: var(--md-text);
 	text-align: start;
 
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em;
+	gap: var(--small-gap);
 }
 
 .intro__text span {
 	width: fit-content;
 	color: var(--light-accent);
-	font-size: 3rem;
+	font-size: var(--lg-text);
 	background-color: var(--dark-accent);
 	padding: 0 0.25em;
 	font-weight: bold;
@@ -38,7 +38,7 @@
 }
 
 .intro__image {
-	border-radius: 30px;
+	border-radius: var(--card-radius);
 	border: solid 5px var(--dark-accent);
 	box-shadow: var(--simple-shadow);
 }
