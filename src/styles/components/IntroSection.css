@@ -19,18 +19,27 @@
 
 .intro__text span {
 	width: fit-content;
-	color: var(--light-accent);
-	font-size: var(--lg-text);
-	background-color: var(--dark-accent);
 	padding: 0 0.25em;
+	background-color: var(--dark-accent);
+
+	color: var(--light-accent);
 	font-weight: bold;
+	font-size: var(--lg-text);
+
+	opacity: 0;
+	animation: enter-up 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.intro__text p {
+	opacity: 0;
+	animation: enter-up 1s ease forwards;
+	animation-delay: 2s;
 }
 
 .intro__text a {
 	text-decoration: none;
 	color: var(--light-accent);
-
-	transition: 0.5s ease;
 }
 
 .intro__text a:hover {
@@ -38,7 +47,51 @@
 }
 
 .intro__image {
+	opacity: 0;
 	border-radius: var(--card-radius);
 	border: solid 5px var(--dark-accent);
 	box-shadow: var(--simple-shadow);
+
+	animation: enter 1s ease forwards;
+	animation-delay: 3s;
+}
+
+svg {
+	opacity: 0;
+	font-size: 5rem;
+	stroke: var(--light-accent);
+	animation: enter 1s ease forwards, bobUpAndDown infinite 1s alternate ease-in-out;
+	animation-delay: 5s;
+}
+
+@keyframes enter-up {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes enter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bobUpAndDown {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(25px);
+	}
 }

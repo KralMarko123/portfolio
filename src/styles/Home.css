@@ -5,18 +5,5 @@
 	flex-direction: column;
 }
 
-svg {
-	font-size: 5rem;
-	stroke: var(--light-accent);
-	animation: bobUpAndDown infinite 1s alternate ease-in-out;
-}
 
-@keyframes bobUpAndDown {
-	0% {
-		transform: translateY(0);
-	}
 
-	100% {
-		transform: translateY(25px);
-	}
-}
