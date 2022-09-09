@@ -20,8 +20,9 @@
 	--page-padding: 2em;
 
 	/**UTILITY*/
-	--card-radius: 30px;
-	--simple-shadow: 5px 15px 20px 5px rgba(0, 0, 0, 0.5);
+	--card-radius: 10px;
+	--simple-border: solid 5px var(--dark-accent);
+	--simple-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.5);
 	--normal-gap: 1em;
 	--small-gap: 0.5em;
 }

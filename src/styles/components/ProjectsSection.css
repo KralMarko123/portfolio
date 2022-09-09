@@ -1,0 +1,43 @@
+.projects {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--normal-gap);
+}
+
+.projects__title {
+	width: fit-content;
+	padding: 0 0.25em;
+	background-color: var(--dark-accent);
+
+	color: var(--light-accent);
+	font-weight: bold;
+	font-size: var(--lg-text);
+
+	align-self: flex-start;
+}
+
+.projects__project {
+	width: 100%;
+	height: 500px;
+
+	border: var(--simple-border);
+	border-radius: var(--card-radius);
+	box-shadow: var(--simple-shadow);
+
+	position: relative;
+	overflow: hidden;
+}
+
+video {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}

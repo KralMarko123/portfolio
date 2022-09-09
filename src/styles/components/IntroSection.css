@@ -1,5 +1,5 @@
 .intro {
-	max-width: var(--container-width);
+	width: 100%;
 
 	display: flex;
 	justify-content: center;
@@ -51,7 +51,7 @@
 .intro__image {
 	width: 450px;
 	border-radius: var(--card-radius);
-	border: solid 5px var(--dark-accent);
+	border: var(--simple-border);
 	box-shadow: var(--simple-shadow);
 
 	animation: enter 1s ease forwards;
