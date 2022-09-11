@@ -16,6 +16,7 @@ const ProjectsSection = () => {
 						poster={p.poster}
 						title={p.title}
 						description={p.description}
+						stack={p.stack}
 					/>
 				);
 			})}

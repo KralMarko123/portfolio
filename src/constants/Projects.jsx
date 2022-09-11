@@ -8,6 +8,7 @@ export const PROJECTS = [
 		poster: cypressPoster,
 		title: "Cypress Test Framework",
 		description:
-			"A testing framework covering numerous placeholder sites using Cypress. It consists of written E2E scenarios covered with automated scripts",
+			"A testing framework covering numerous placeholder sites using Cypress. It consists of written E2E scenarios covered with automated scripts.",
+		stack: ["Cypress", "JavaScript"],
 	},
 ];

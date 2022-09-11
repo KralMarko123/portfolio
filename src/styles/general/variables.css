@@ -9,8 +9,9 @@
 
 	/**TEXT*/
 	--main-font: "Manrope", sans-serif;
-	--lg-text: 3rem;
-	--md-text: 2rem;
+	--xl-text: 3rem;
+	--lg-text: 2rem;
+	--md-text: 1.5rem;
 	--sm-text: 1rem;
 
 	/**WIDTH & HEIGHTS*/
@@ -18,6 +19,7 @@
 
 	/**PADDINGS & MARGINS*/
 	--page-padding: 2em;
+	--label-padding: 0 0.5em;
 
 	/**UTILITY*/
 	--card-radius: 10px;

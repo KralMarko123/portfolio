@@ -12,19 +12,19 @@
 	flex-direction: column;
 	gap: var(--small-gap);
 
-	font-size: var(--md-text);
+	font-size: var(--lg-text);
 	line-height: 1.5;
 	text-align: start;
 }
 
 .intro__text span {
 	width: fit-content;
-	padding: 0 0.25em;
+	padding: var(--label-padding);
 	background-color: var(--dark-accent);
 
 	color: var(--light-accent);
 	font-weight: bold;
-	font-size: var(--lg-text);
+	font-size: var(--xl-text);
 
 	animation: enter-up 1s ease forwards;
 	animation-delay: 1s;
