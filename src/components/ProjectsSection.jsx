@@ -17,6 +17,7 @@ const ProjectsSection = () => {
 						title={p.title}
 						description={p.description}
 						stack={p.stack}
+						links={p.links}
 					/>
 				);
 			})}

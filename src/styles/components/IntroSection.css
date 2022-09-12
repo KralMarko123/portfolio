@@ -45,7 +45,7 @@
 }
 
 .intro__text a:hover {
-	text-decoration: underline;
+	color: var(--link);
 }
 
 .intro__image {
@@ -60,7 +60,7 @@
 	opacity: 0;
 }
 
-svg {
+.intro__arrow {
 	animation: enter 1s ease forwards, bobUpAndDown infinite 1s alternate ease-in-out;
 	animation-delay: 6s;
 

@@ -25,7 +25,7 @@ const IntroSection = () => {
 				</div>
 				<img src={profileImage} alt="profile-image" className="intro__image" />
 			</section>
-			<TbArrowNarrowDown className="enter" />
+			<TbArrowNarrowDown className="intro__arrow enter" />
 		</>
 	);
 };

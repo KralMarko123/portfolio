@@ -1,7 +1,8 @@
 import { React, useRef } from "react";
+import { FaVideo, FaGithub } from "react-icons/fa";
 import "../styles/components/Project.css";
 
-const Project = ({ id, video, poster, title, description, stack }) => {
+const Project = ({ id, video, poster, title, description, stack, links }) => {
 	const projectVideo = useRef();
 
 	const toggleVideo = (shouldPlay) => {
@@ -26,12 +27,23 @@ const Project = ({ id, video, poster, title, description, stack }) => {
 					<p className="project__description">{description}</p>
 				</div>
 			</div>
-			<div className="stacks">
-				<span className="stacks__title">/* Tech Stack</span>
-				<div className="stacks__list">
+			<div className="info">
+				<span className="info__title">/* Tech Stack */</span>
+				<div className="info__stacks">
 					{stack.map((s) => {
-						return <div className="stacks__stack">{s}</div>;
+						return <div className="info__stacks__stack">{s}</div>;
 					})}
+				</div>
+				<span className="info__title">/* Check it out */</span>
+				<div className="info__links">
+					<a href={links.git} className="info__links__link" target="_blank">
+						Source code {<FaGithub className="link__badge" />}
+					</a>
+					{links.demo && (
+						<a href={links.demo} className="info__links__link" target="_blank">
+							Demo Video {<FaVideo className="link__badge" />}
+						</a>
+					)}
 				</div>
 			</div>
 		</>

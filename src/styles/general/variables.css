@@ -6,6 +6,7 @@
 	--dark-accent: rgb(57, 62, 70);
 	--light: rgb(237, 237, 237);
 	--light-accent: rgb(255, 211, 107);
+	--link: rgb(64, 120, 192);
 
 	/**TEXT*/
 	--main-font: "Manrope", sans-serif;
@@ -13,12 +14,13 @@
 	--lg-text: 2rem;
 	--md-text: 1.5rem;
 	--sm-text: 1rem;
+	--md-spacing: 3px;
 
 	/**WIDTH & HEIGHTS*/
 	--container-width: 1200px;
 
 	/**PADDINGS & MARGINS*/
-	--page-padding: 2em;
+	--page-padding: 0;
 	--label-padding: 0 0.5em;
 
 	/**UTILITY*/
