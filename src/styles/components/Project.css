@@ -24,7 +24,7 @@
 	top: 0;
 	left: 0;
 
-	padding: 0 10%;
+	padding: 0 5%;
 	background-color: rgba(0, 0, 0, 0.75);
 
 	display: flex;
@@ -39,7 +39,6 @@
 .project__title {
 	font-size: var(--lg-text);
 	font-weight: bold;
-
 	text-align: left;
 }
 
