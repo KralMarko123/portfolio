@@ -1,6 +1,7 @@
 import cypressVideo from "../assets/videos/cypress.mp4";
 import cypressPoster from "../assets/images/cypressPoster.jpg";
-import ecinmeaPoster from "../assets/images/ecinema.jpg";
+import ecinemaVideo from "../assets/videos/ecinema.mp4";
+import ecinemaPoster from "../assets/images/ecinema.jpg";
 
 export const PROJECTS = [
 	{
@@ -18,8 +19,8 @@ export const PROJECTS = [
 
 	{
 		id: "ecinema",
-		video: null,
-		poster: ecinmeaPoster,
+		video: ecinemaVideo,
+		poster: ecinemaPoster,
 		title: "ECinema App",
 		description:
 			"A project I made during my studies. Features include invoice creation, excel imports/exports, cart management, Stripe payments.",
