@@ -42,7 +42,7 @@ const IntroSection = () => {
 					className="intro__bottom"
 					animate={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
-					transition={{ delay: 3, type: "spring", duration: 0.25 }}
+					transition={{ delay: 4, type: "spring", duration: 0.5 }}
 				>
 					<TbArrowNarrowDown className="intro__arrow enter" />
 				</motion.div>

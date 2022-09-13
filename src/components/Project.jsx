@@ -1,5 +1,5 @@
 import { React, useRef, useEffect } from "react";
-import { FaVideo, FaGithub } from "react-icons/fa";
+import { FaVideo, FaGithub, FaLink } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { VARIANTS } from "../constants/AnimationVariants";
@@ -71,6 +71,11 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 					{links.demo && (
 						<a href={links.demo} className="info__links__link" target="_blank">
 							Demo Video {<FaVideo className="link__badge" />}
+						</a>
+					)}
+					{links.live && (
+						<a href={links.live} className="info__links__link" target="_blank">
+							Visit the site {<FaLink className="link__badge" />}
 						</a>
 					)}
 				</div>

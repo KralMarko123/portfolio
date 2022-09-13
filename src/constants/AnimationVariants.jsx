@@ -7,7 +7,7 @@ export const VARIANTS = {
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { delay: 0.25, type: "spring", duration: 0.25 },
+			transition: { delay: 1, type: "spring", duration: 0.5 },
 		},
 	},
 
@@ -19,7 +19,7 @@ export const VARIANTS = {
 		visible: {
 			opacity: 1,
 			y: 0,
-			transition: { delay: 0.5, type: "spring", duration: 0.25 },
+			transition: { delay: 1.5, type: "spring", duration: 0.5 },
 		},
 	},
 
@@ -29,7 +29,7 @@ export const VARIANTS = {
 		},
 		visible: {
 			opacity: 1,
-			transition: { delay: 1, type: "spring", duration: 0.25 },
+			transition: { delay: 2, type: "spring", duration: 0.5 },
 		},
 	},
 
