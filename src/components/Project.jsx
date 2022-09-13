@@ -1,21 +1,41 @@
-import { React, useRef } from "react";
+import { React, useRef, useEffect } from "react";
 import { FaVideo, FaGithub } from "react-icons/fa";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { VARIANTS } from "../constants/AnimationVariants";
 import "../styles/components/Project.css";
 
 const Project = ({ id, video, poster, title, description, stack, links }) => {
 	const projectVideo = useRef();
-
 	const toggleVideo = (shouldPlay) => {
 		shouldPlay ? projectVideo.current.play() : projectVideo.current.pause();
 	};
 
+	const [projectRef, projectInView] = useInView({ threshold: 0.1, triggerOnce: true });
+	const [infoRef, infoInView] = useInView({ triggerOnce: true });
+	const projectAnimation = useAnimation();
+	const infoAnimation = useAnimation();
+
+	useEffect(() => {
+		if (projectInView) {
+			projectAnimation.start(VARIANTS.project["visible"]);
+		}
+
+		if (infoInView) {
+			infoAnimation.start(VARIANTS.project["visible"]);
+		}
+	}, [projectInView, infoInView]);
+
 	return (
 		<>
-			<div
+			<motion.div
 				id={id}
 				className="project"
 				onMouseEnter={() => toggleVideo(false)}
 				onMouseLeave={() => toggleVideo(true)}
+				ref={projectRef}
+				animate={projectAnimation}
+				initial={VARIANTS.project["hidden"]}
 			>
 				<video autoPlay muted loop poster={poster} ref={projectVideo}>
 					<source src={video} type="video/mp4" />
@@ -26,12 +46,21 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 					<h1 className="project__title">{title}</h1>
 					<p className="project__description">{description}</p>
 				</div>
-			</div>
-			<div className="info">
+			</motion.div>
+			<motion.div
+				className="info"
+				ref={infoRef}
+				animate={infoAnimation}
+				initial={VARIANTS.project["hidden"]}
+			>
 				<span className="info__title">/* Tech Stack */</span>
 				<div className="info__stacks">
 					{stack.map((s) => {
-						return <div className="info__stacks__stack">{s}</div>;
+						return (
+							<div className="info__stacks__stack" key={s}>
+								{s}
+							</div>
+						);
 					})}
 				</div>
 				<span className="info__title">/* Check it out */</span>
@@ -45,7 +74,7 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 						</a>
 					)}
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

@@ -24,9 +24,23 @@ export const PROJECTS = [
 		title: "ECinema App",
 		description:
 			"A project I made during my studies. Features include invoice creation, excel imports/exports, cart management, Stripe payments.",
-		stack: [".NET", "C#", "Bootstrap"],
+		stack: [".NET", "C#", "Bootstrap", "EF", "MySQL"],
 		links: {
 			git: "https://github.com/KralMarko123/ECinemaTicket",
+			demo: "https://drive.google.com/file/d/1DB6NtPK3cIR21pPTPfaLolEbqGYGzD7o/view",
+		},
+	},
+
+	{
+		id: "nbaviewer",
+		video: ecinemaVideo,
+		poster: ecinemaPoster,
+		title: "WBS NBA Viewer",
+		description:
+			"A React app that sends out SPARQL queries using a third party library. It fetches NBA players from an RDF database and renders the results accordingly.",
+		stack: ["React", "CSS", "Cypress"],
+		links: {
+			git: "https://github.com/KralMarko123/wbs-nba-viewer",
 			demo: "https://drive.google.com/file/d/1DB6NtPK3cIR21pPTPfaLolEbqGYGzD7o/view",
 		},
 	},
