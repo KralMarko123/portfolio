@@ -5,7 +5,8 @@
 	flex-direction: column;
 	gap: var(--small-gap);
 
-	padding: 1em 0;
+	margin-top: var(--simple-margin);
+	padding-bottom: 2em;
 }
 
 .footer__text {

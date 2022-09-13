@@ -22,6 +22,7 @@
 	/**PADDINGS & MARGINS*/
 	--page-padding: 0;
 	--label-padding: 0 0.5em;
+	--simple-margin: 3rem;
 
 	/**UTILITY*/
 	--card-radius: 10px;
