@@ -20,6 +20,7 @@
 .tools__desc {
 	font-size: var(--md-text);
 	letter-spacing: var(--md-spacing);
+	opacity: 0.5;
 }
 
 .tools__lists {

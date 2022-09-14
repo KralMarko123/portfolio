@@ -22,7 +22,7 @@ const ToolsSection = () => {
 		<section className="tools">
 			<span className="tools__title">Tools:</span>
 			<p className="tools__desc">
-				/* I think I can pick up anything quickly if need be, but these are my go-to */
+				// I think I can pick up anything quickly if need be, but these are my go-to
 			</p>
 			<motion.div
 				className="tools__lists"
