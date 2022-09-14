@@ -1,6 +1,6 @@
 .project {
 	width: 100%;
-	height: 550px;
+	height: 600px;
 
 	border: var(--simple-border);
 	border-radius: var(--card-radius);
@@ -125,4 +125,10 @@
 
 .link__badge {
 	font-size: var(--md-text);
+}
+
+@media (max-width: 767px) {
+	.project {
+		height: 500px;
+	}
 }
