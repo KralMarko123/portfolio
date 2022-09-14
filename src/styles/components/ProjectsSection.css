@@ -1,5 +1,6 @@
 .projects {
 	width: 100%;
+	margin-bottom: var(--sm-margin);
 
 	display: flex;
 	flex-direction: column;

@@ -64,7 +64,7 @@
 
 .info {
 	width: 100%;
-	margin-bottom: var(--simple-margin);
+	margin-bottom: var(--sm-margin);
 
 	display: flex;
 	flex-direction: column;
@@ -74,6 +74,7 @@
 .info__title {
 	font-size: var(--md-text);
 	letter-spacing: var(--md-spacing);
+	opacity: 0.5;
 }
 
 .info__stacks {

@@ -11,18 +11,18 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 		shouldPlay ? projectVideo.current.play() : projectVideo.current.pause();
 	};
 
-	const [projectRef, projectInView] = useInView({ threshold: 0.1, triggerOnce: true });
-	const [infoRef, infoInView] = useInView({ triggerOnce: true });
+	const [projectRef, projectInView] = useInView({ threshold: 0.2, triggerOnce: true });
+	const [infoRef, infoInView] = useInView({ threshold: 0.2, triggerOnce: true });
 	const projectAnimation = useAnimation();
 	const infoAnimation = useAnimation();
 
 	useEffect(() => {
 		if (projectInView) {
-			projectAnimation.start(VARIANTS.project["visible"]);
+			projectAnimation.start(VARIANTS.simple["visible"]);
 		}
 
 		if (infoInView) {
-			infoAnimation.start(VARIANTS.project["visible"]);
+			infoAnimation.start(VARIANTS.simple["visible"]);
 		}
 	}, [projectInView, infoInView]);
 
@@ -35,7 +35,7 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 				onMouseLeave={() => toggleVideo(true)}
 				ref={projectRef}
 				animate={projectAnimation}
-				initial={VARIANTS.project["hidden"]}
+				initial={VARIANTS.simple["hidden"]}
 			>
 				<video autoPlay muted loop poster={poster} ref={projectVideo}>
 					<source src={video} type="video/mp4" />
@@ -51,9 +51,9 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 				className="info"
 				ref={infoRef}
 				animate={infoAnimation}
-				initial={VARIANTS.project["hidden"]}
+				initial={VARIANTS.simple["hidden"]}
 			>
-				<span className="info__title">/* Tech Stack */</span>
+				<span className="info__title">// Tech Stack</span>
 				<div className="info__stacks">
 					{stack.map((s) => {
 						return (
@@ -63,7 +63,7 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 						);
 					})}
 				</div>
-				<span className="info__title">/* Check it out */</span>
+				<span className="info__title">// Check it out</span>
 				<div className="info__links">
 					<a href={links.git} className="info__links__link" target="_blank">
 						Source code {<FaGithub className="link__badge" />}

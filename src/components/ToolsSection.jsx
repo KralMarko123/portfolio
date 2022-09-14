@@ -9,12 +9,12 @@ const ToolsSection = () => {
 	const feTools = ["React", "HTML", "CSS", "SCSS/SASS", "JavaScript", "jQuery"];
 	const other = ["Git", "Cypress", "Selenium", "TDD"];
 
-	const [toolsRef, toolsInView] = useInView({ threshold: 0.1, triggerOnce: true });
+	const [toolsRef, toolsInView] = useInView({ threshold: 0.2, triggerOnce: true });
 	const toolsAnimation = useAnimation();
 
 	useEffect(() => {
 		if (toolsInView) {
-			toolsAnimation.start(VARIANTS.tools["visible"]);
+			toolsAnimation.start(VARIANTS.simple["visible"]);
 		}
 	}, [toolsInView]);
 
@@ -28,7 +28,7 @@ const ToolsSection = () => {
 				className="tools__lists"
 				ref={toolsRef}
 				animate={toolsAnimation}
-				initial={VARIANTS.tools["hidden"]}
+				initial={VARIANTS.simple["hidden"]}
 			>
 				<div className="tools__lists__list">
 					<h3>Back-End</h3>

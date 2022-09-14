@@ -33,19 +33,7 @@ export const VARIANTS = {
 		},
 	},
 
-	project: {
-		hidden: {
-			opacity: 0,
-			y: 100,
-		},
-		visible: {
-			opacity: 1,
-			y: 0,
-			transition: { type: "spring", duration: 0.5 },
-		},
-	},
-
-	tools: {
+	simple: {
 		hidden: {
 			opacity: 0,
 			y: 100,

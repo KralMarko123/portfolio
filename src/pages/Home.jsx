@@ -1,4 +1,6 @@
 import React from "react";
+import BioSection from "../components/BioSection";
+import ContactSection from "../components/ContactSection";
 import IntroSection from "../components/IntroSection";
 import Footer from "../components/layout/Footer";
 import ProjectsSection from "../components/ProjectsSection";
@@ -12,6 +14,8 @@ const Home = () => {
 			<IntroSection />
 			<ProjectsSection />
 			<ToolsSection />
+			<BioSection />
+			<ContactSection />
 			<Footer />
 		</div>
 	);
