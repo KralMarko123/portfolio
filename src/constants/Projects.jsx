@@ -1,18 +1,13 @@
-import cypressVideo from "../assets/videos/cypress.mp4";
 import cypressPoster from "../assets/images/cypress.jpg";
-import ecinemaVideo from "../assets/videos/ecinema.mp4";
 import ecinemaPoster from "../assets/images/ecinema.jpg";
-import wbsVideo from "../assets/videos/wbs.mp4";
 import wbsPoster from "../assets/images/wbs.jpg";
-import yeVideo from "../assets/videos/ye.mp4";
 import yePoster from "../assets/images/ye.jpg";
-import travellandVideo from "../assets/videos/travelland.mp4";
 import travellandPoster from "../assets/images/travelland.jpg";
 
 export const PROJECTS = [
 	{
 		id: "cypress",
-		video: cypressVideo,
+		video: "cypress.mp4",
 		poster: cypressPoster,
 		title: "Cypress Test Framework",
 		description:
@@ -25,7 +20,7 @@ export const PROJECTS = [
 
 	{
 		id: "ecinema",
-		video: ecinemaVideo,
+		video: "ecinema.mp4",
 		poster: ecinemaPoster,
 		title: "ECinema App",
 		description:
@@ -39,7 +34,7 @@ export const PROJECTS = [
 
 	{
 		id: "nbaviewer",
-		video: wbsVideo,
+		video: "wbs.mp4",
 		poster: wbsPoster,
 		title: "WBS NBA Viewer",
 		description:
@@ -53,7 +48,7 @@ export const PROJECTS = [
 
 	{
 		id: "yecardgame",
-		video: yeVideo,
+		video: "ye.mp4",
 		poster: yePoster,
 		title: "Ye Memory Game",
 		description:
@@ -67,7 +62,7 @@ export const PROJECTS = [
 
 	{
 		id: "travelland",
-		video: travellandVideo,
+		video: "travelland.mp4",
 		poster: travellandPoster,
 		title: "TravelLand Testing Framework",
 		description:

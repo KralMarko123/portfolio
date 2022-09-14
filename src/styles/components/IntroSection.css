@@ -22,7 +22,7 @@
 	gap: var(--normal-gap);
 
 	font-size: var(--lg-text);
-	line-height: 1.5;
+	line-height: var(--text-height);
 	text-align: start;
 }
 
@@ -66,5 +66,30 @@
 
 	100% {
 		transform: translateY(25px);
+	}
+}
+
+/**TABLET STYLES*/
+@media (min-width: 768px) and (max-width: 1199px) {
+	.intro__image {
+		width: 350px;
+	}
+}
+
+@media (max-width: 767px) {
+	.intro__text {
+		align-items: center;
+		gap: var(--normal-gap);
+
+		line-height: var(--text-height);
+		text-align: center;
+	}
+
+	.intro__image {
+		display: none;
+	}
+
+	.intro__arrow {
+		font-size: 4rem;
 	}
 }

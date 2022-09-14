@@ -13,8 +13,9 @@
 	--xl-text: 3rem;
 	--lg-text: 2rem;
 	--md-text: 1.5rem;
-	--sm-text: 1rem;
+	--sm-text: 1.25rem;
 	--text-spacing: 2px;
+	--text-height: 1.5;
 
 	/**WIDTH & HEIGHTS*/
 	--container-width: 1200px;
@@ -25,6 +26,7 @@
 	--lg-margin: 10em;
 	--md-margin: 5em;
 	--sm-margin: 3em;
+	--xs-margin: 1em;
 
 	/**UTILITY*/
 	--card-radius: 10px;
@@ -32,4 +34,52 @@
 	--simple-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.5);
 	--normal-gap: 1em;
 	--small-gap: 0.5em;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	:root {
+		/**TEXT*/
+		--xl-text: 2.5rem;
+		--lg-text: 1.75rem;
+		--md-text: 1.25rem;
+		--sm-text: 1rem;
+
+		/**WIDTH & HEIGHTS*/
+		--container-width: 95%;
+
+		/**PADDINGS & MARGINS*/
+		--label-padding: 0 0.25em;
+		--lg-margin: 8em;
+		--md-margin: 3em;
+		--sm-margin: 2em;
+		--xs-margin: 1em;
+	}
+}
+
+@media (max-width: 767px) {
+	:root {
+		/**TEXT*/
+		--xl-text: 2.25rem;
+		--lg-text: 1.5rem;
+		--md-text: 1.15rem;
+		--sm-text: 0.95rem;
+		--text-height: 1.25;
+
+		/**WIDTH & HEIGHTS*/
+		--container-width: 95%;
+
+		/**PADDINGS & MARGINS*/
+		--label-padding: 0 0.25em;
+		--lg-margin: 8em;
+		--md-margin: 3em;
+		--sm-margin: 2em;
+		--xs-margin: 1em;
+
+		/**UTILITY*/
+		--card-radius: 5px;
+		--simple-border: solid 3px var(--dark-accent);
+		--simple-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.5);
+		--normal-gap: 0.75em;
+		--small-gap: 0.25em;
+	}
 }

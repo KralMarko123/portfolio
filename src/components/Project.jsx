@@ -5,7 +5,8 @@ import { useInView } from "react-intersection-observer";
 import { VARIANTS } from "../constants/AnimationVariants";
 import "../styles/components/Project.css";
 
-const Project = ({ id, video, poster, title, description, stack, links }) => {
+const Project = ({ id, videoPath, poster, title, description, stack, links }) => {
+	const videoURL = require(`../assets/videos/${videoPath}`);
 	const projectVideo = useRef();
 	const toggleVideo = (shouldPlay) => {
 		shouldPlay ? projectVideo.current.play() : projectVideo.current.pause();
@@ -38,7 +39,7 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 				initial={VARIANTS.simple["hidden"]}
 			>
 				<video autoPlay muted loop poster={poster} ref={projectVideo}>
-					<source src={video} type="video/mp4" />
+					<source src={videoURL} type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
 

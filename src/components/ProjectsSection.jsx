@@ -12,7 +12,7 @@ const ProjectsSection = () => {
 					<Project
 						key={p.id}
 						id={p.id}
-						video={p.video}
+						videoPath={p.video}
 						poster={p.poster}
 						title={p.title}
 						description={p.description}

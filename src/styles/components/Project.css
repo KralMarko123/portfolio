@@ -24,14 +24,17 @@
 	top: 0;
 	left: 0;
 
-	padding: 0 5%;
 	background-color: rgba(0, 0, 0, 0.85);
+
+	padding: 0 5%;
 
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
+	gap: var(--small-gap);
 
-	line-height: 1.75;
+	line-height: var(--text-height);
 	opacity: 0;
 	transition: 0.35s ease-in-out;
 }
@@ -39,7 +42,7 @@
 .project__title {
 	font-size: var(--lg-text);
 	font-weight: bold;
-	text-align: left;
+	align-self: flex-start;
 }
 
 .project__description {
@@ -53,12 +56,18 @@
 	transition: 0.35s ease-in-out;
 }
 
-.project:hover .project__overlay {
+.project:hover .project__overlay,
+.project:focus .project__overlay,
+.project:active .project__overlay {
 	opacity: 1;
 }
 
 .project:hover .project__title,
-.project:hover .project__description {
+.project:hover .project__description,
+.project:focus .project__title,
+.project:focus .project__description,
+.project:active .project__title,
+.project:active .project__description {
 	transform: translateY(0);
 }
 

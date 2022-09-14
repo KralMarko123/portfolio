@@ -28,13 +28,13 @@
 	flex-direction: column;
 	gap: var(--small-gap);
 
-	font-size: var(--lg-text);
-	line-height: 1.5;
+	font-size: var(--md-text);
+	line-height: var(--text-height);
 }
 
 .contact__info__links {
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: center;
 	gap: var(--normal-gap);
 }
