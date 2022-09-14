@@ -19,8 +19,8 @@
 
 .contact__info {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	gap: var(--normal-gap);
 }
 
 .contact__info__text {
@@ -33,16 +33,17 @@
 }
 
 .contact__info__links {
-	width: 50%;
-
-	justify-content: center;
-	align-items: center;
 	display: flex;
-	flex-direction: column;
+	justify-content: start;
+	align-items: center;
 	gap: var(--normal-gap);
 }
 
 .social__link {
 	font-size: var(--xl-text);
 	color: var(--light-accent);
+}
+
+.social__link:hover {
+	color: var(--link);
 }

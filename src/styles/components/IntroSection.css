@@ -26,7 +26,7 @@
 	text-align: start;
 }
 
-.intro__text span {
+.intro__text__title {
 	width: fit-content;
 	padding: var(--label-padding);
 	background-color: var(--dark-accent);

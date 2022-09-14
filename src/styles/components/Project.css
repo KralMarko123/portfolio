@@ -73,7 +73,7 @@
 
 .info__title {
 	font-size: var(--md-text);
-	letter-spacing: var(--md-spacing);
+	letter-spacing: var(--text-spacing);
 	opacity: 0.5;
 }
 

@@ -6,7 +6,7 @@ import "../styles/components/ProjectsSection.css";
 const ProjectsSection = () => {
 	return (
 		<section className="projects">
-			<span className="projects__title">Projects:</span>
+			<h1 className="projects__title">Projects:</h1>
 			{PROJECTS.map((p) => {
 				return (
 					<Project

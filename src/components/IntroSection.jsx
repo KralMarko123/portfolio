@@ -11,9 +11,14 @@ const IntroSection = () => {
 			<section className="intro">
 				<div className="intro__top">
 					<div className="intro__text">
-						<motion.span variants={VARIANTS.label} animate="visible" initial="hidden">
+						<motion.h1
+							className="intro__text__title"
+							variants={VARIANTS.label}
+							animate="visible"
+							initial="hidden"
+						>
 							Hi! I'm Marko.
-						</motion.span>
+						</motion.h1>
 						<motion.p variants={VARIANTS.text} animate="visible" initial="hidden">
 							A down-to-earth, calm, determined 23 year old software engineering student.
 						</motion.p>

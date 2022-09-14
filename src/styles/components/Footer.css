@@ -5,11 +5,11 @@
 	flex-direction: column;
 	gap: var(--small-gap);
 
-	margin-top: var(--lg-margin);
+	margin-top: var(--sm-margin);
 	padding-bottom: 2em;
 }
 
 .footer__text {
-	font-size: var(--sm-text);
+	font-size: var(--md-text);
 	letter-spacing: var(--md-spacing);
 }

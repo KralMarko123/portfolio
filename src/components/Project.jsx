@@ -11,8 +11,8 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 		shouldPlay ? projectVideo.current.play() : projectVideo.current.pause();
 	};
 
-	const [projectRef, projectInView] = useInView({ threshold: 0.2, triggerOnce: true });
-	const [infoRef, infoInView] = useInView({ threshold: 0.2, triggerOnce: true });
+	const [projectRef, projectInView] = useInView({ threshold: 0.1, triggerOnce: true });
+	const [infoRef, infoInView] = useInView({ threshold: 0.1, triggerOnce: true });
 	const projectAnimation = useAnimation();
 	const infoAnimation = useAnimation();
 

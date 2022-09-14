@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import "../styles/components/ContactSection.css";
 
 const ContactSection = () => {
-	const [contactRef, contactIsInView] = useInView({ threshold: 0.2, triggerOnce: true });
+	const [contactRef, contactIsInView] = useInView({ threshold: 0.1, triggerOnce: true });
 	const contactAnimation = useAnimation();
 
 	useEffect(() => {
@@ -17,17 +17,18 @@ const ContactSection = () => {
 
 	return (
 		<section className="contact">
-			<span className="contact__title">Contact:</span>
+			<h1 className="contact__title">Contact:</h1>
 			<motion.div
 				className="contact__info"
 				ref={contactRef}
 				animate={contactAnimation}
 				initial={VARIANTS.simple["hidden"]}
 			>
-				<div className="contact__info__text">
-					<p>Want to ask me a question or get in touch?</p>
-					<p>Feel free to send me an email or find me on my other socials!</p>
-				</div>
+				<p className="contact__info__text">
+					Want to ask me a question or get in touch? <br /> Feel free to send me an email or find me
+					on my other socials!
+				</p>
+
 				<div className="contact__info__links">
 					<a href="mailto:kralmarko123@gmail.com" target="_blank" className="social__link">
 						<FaMailBulk />

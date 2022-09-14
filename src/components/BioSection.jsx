@@ -6,7 +6,7 @@ import { VARIANTS } from "../constants/AnimationVariants";
 import "../styles/components/BioSection.css";
 
 const BioSection = () => {
-	const [bioRef, bioIsInView] = useInView({ threshold: 0.2, triggerOnce: true });
+	const [bioRef, bioIsInView] = useInView({ threshold: 0.1, triggerOnce: true });
 	const bioAnimation = useAnimation();
 
 	useEffect(() => {
@@ -17,7 +17,7 @@ const BioSection = () => {
 
 	return (
 		<section className="bio">
-			<span className="bio__title">Bio:</span>
+			<h1 className="bio__title">Bio:</h1>
 			{BIOS.map((bio, i) => (
 				<motion.p
 					className="bio__row"

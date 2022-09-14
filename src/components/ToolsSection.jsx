@@ -5,11 +5,12 @@ import { VARIANTS } from "../constants/AnimationVariants";
 import "../styles/components/ToolsSection.css";
 
 const ToolsSection = () => {
+	const toolTitles = ["Back-End", "Front-End", "Other"];
 	const beTools = ["C#", "Java", ".NET", "Spring"];
 	const feTools = ["React", "HTML", "CSS", "SCSS/SASS", "JavaScript", "jQuery"];
 	const other = ["Git", "Cypress", "Selenium", "TDD"];
 
-	const [toolsRef, toolsInView] = useInView({ threshold: 0.2, triggerOnce: true });
+	const [toolsRef, toolsInView] = useInView({ threshold: 0.1, triggerOnce: true });
 	const toolsAnimation = useAnimation();
 
 	useEffect(() => {
@@ -20,7 +21,7 @@ const ToolsSection = () => {
 
 	return (
 		<section className="tools">
-			<span className="tools__title">Tools:</span>
+			<h1 className="tools__title">Tools:</h1>
 			<p className="tools__desc">
 				// I think I can pick up anything quickly if need be, but these are my go-to
 			</p>
@@ -30,24 +31,16 @@ const ToolsSection = () => {
 				animate={toolsAnimation}
 				initial={VARIANTS.simple["hidden"]}
 			>
-				<div className="tools__lists__list">
-					<h3>Back-End</h3>
-					{beTools.map((tool) => (
-						<p key={tool}>{tool}</p>
-					))}
-				</div>
-				<div className="tools__lists__list">
-					<h3>Front-End</h3>
-					{feTools.map((tool) => (
-						<p key={tool}>{tool}</p>
-					))}
-				</div>
-				<div className="tools__lists__list">
-					<h3>Other</h3>
-					{other.map((tool) => (
-						<p key={tool}>{tool}</p>
-					))}
-				</div>
+				{toolTitles.map((title, i) => {
+					return (
+						<div key={title} className="tools__lists__list">
+							<h3>{title}</h3>
+							{i === 0 && beTools.map((tool) => <p key={tool}>{tool}</p>)}
+							{i === 1 && feTools.map((tool) => <p key={tool}>{tool}</p>)}
+							{i === 2 && other.map((tool) => <p key={tool}>{tool}</p>)}
+						</div>
+					);
+				})}
 			</motion.div>
 		</section>
 	);
