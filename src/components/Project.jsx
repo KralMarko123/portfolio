@@ -18,16 +18,11 @@ const Project = ({
 }) => {
 	//Resize logic
 	const [isMobile, setIsMobile] = useState(false);
-	const reloadVideo = () => {
-		projectVideo.current.load();
-		projectVideo.current.play();
-	};
 
 	useEffect(() => {
 		const checkMobile = () => {
-			window.innerWidth <= 767
-				? setIsMobile(true) && reloadVideo()
-				: setIsMobile(false) && reloadVideo();
+			window.innerWidth <= 767 ? setIsMobile(true) : setIsMobile(false);
+			projectVideo.current.load();
 		};
 		checkMobile();
 
@@ -70,11 +65,7 @@ const Project = ({
 				initial={VARIANTS.simple["hidden"]}
 			>
 				<video autoPlay muted loop poster={isMobile ? mobilePoster : poster} ref={projectVideo}>
-					<source
-						src={isMobile ? mobileVideo : video}
-						type="video/mp4"
-						onChange={() => console.log("changed")}
-					/>
+					<source src={isMobile ? mobileVideo : video} type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
 
