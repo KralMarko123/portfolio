@@ -4,17 +4,21 @@ import { VARIANTS } from "../../constants/AnimationVariants";
 import "../../styles/components/Header.css";
 
 const navTitles = ["projects", "tools", "bio", "contact"];
+const handleScrollTo = (name) => {
+	const elementToScrollTo = document.getElementById(name);
+	elementToScrollTo.scrollIntoView();
+};
 
 const Nav = () => {
 	return (
 		<nav className="header__nav">
-			<div className="nav__brand">
-				<a href="/#intro">marko.markovikj</a>
+			<div className="nav__brand" onClick={() => handleScrollTo("intro")}>
+				marko.markovikj
 			</div>
 			<ul className="nav__list">
 				{navTitles.map((title) => (
-					<li key={title} className="nav__list__link">
-						<a href={`/#${title}`}>{title}.</a>
+					<li key={title} className="nav__list__link" onClick={() => handleScrollTo(title)}>
+						{title}.
 					</li>
 				))}
 			</ul>
@@ -27,8 +31,8 @@ const MobileNav = () => {
 
 	return (
 		<nav className="header__nav">
-			<div className="nav__brand">
-				<a href="/#intro">marko.markovikj</a>
+			<div className="nav__brand" onClick={() => handleScrollTo("intro")}>
+				marko.markovikj
 			</div>
 			<span className="nav__toggle" onClick={() => setIsOpen(true)}>
 				menu.
@@ -39,10 +43,15 @@ const MobileNav = () => {
 						close.
 					</div>
 					{navTitles.map((title) => (
-						<li key={title} className="nav__list__link">
-							<a href={`/#${title}`} onClick={() => setIsOpen(false)}>
-								{title}.
-							</a>
+						<li
+							key={title}
+							className="nav__list__link"
+							onClick={() => {
+								setIsOpen(false);
+								handleScrollTo(title);
+							}}
+						>
+							{title}.
 						</li>
 					))}
 				</ul>

@@ -50,3 +50,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+@media (max-width: 1199px) {
+	html {
+		scroll-padding: 70px;
+	}
+}
