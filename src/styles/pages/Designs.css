@@ -1,0 +1,64 @@
+.designs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.designs__list {
+	width: var(--container-width);
+	height: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: var(--normal-gap);
+}
+
+.designs__list__design {
+	width: calc(400px - var(--normal-gap));
+	height: 300px;
+
+	background-size: cover;
+	background-position: top left;
+	background-repeat: no-repeat;
+
+	border: var(--simple-border);
+	border-radius: var(--card-radius);
+	box-shadow: var(--simple-shadow);
+
+	overflow: hidden;
+	transition: all 0.25s ease-in-out;
+}
+
+.designs__list__design a {
+	text-decoration: none;
+}
+
+.design__info {
+	width: 100%;
+	height: 100%;
+
+	padding: var(--simple-padding);
+	background: rgba(0, 0, 0, 0.75);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	transition: all 0.25s ease-in-out;
+}
+
+.design__info__title {
+	font-size: var(--lg-text);
+	color: var(--light-accent);
+}
+
+.designs__list__design:hover {
+	transform: scale(0.95);
+	background-position: center;
+}
+
+.designs__list__design:hover .design__info {
+	opacity: 0;
+}
