@@ -16,7 +16,7 @@ const BioSection = () => {
 	}, [bioIsInView]);
 
 	return (
-		<section className="bio">
+		<section className="bio" id="bio">
 			<h1 className="bio__title">Bio:</h1>
 			{BIOS.map((bio, i) => (
 				<motion.p

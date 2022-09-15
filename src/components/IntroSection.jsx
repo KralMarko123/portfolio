@@ -8,7 +8,7 @@ import "../styles/components/IntroSection.css";
 const IntroSection = () => {
 	return (
 		<>
-			<section className="intro">
+			<section className="intro" id="intro">
 				<div className="intro__top">
 					<div className="intro__text">
 						<motion.h1
@@ -47,7 +47,7 @@ const IntroSection = () => {
 					className="intro__bottom"
 					animate={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
-					transition={{ delay: 4, type: "spring", duration: 0.5 }}
+					transition={{ delay: 1.5, type: "spring", duration: 0.5 }}
 				>
 					<TbArrowNarrowDown className="intro__arrow enter" />
 				</motion.div>

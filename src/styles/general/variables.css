@@ -22,6 +22,8 @@
 
 	/**PADDINGS & MARGINS*/
 	--page-padding: 0;
+	--simple-padding: 0.5em;
+	--lg-padding: 3em;
 	--label-padding: 0 0.5em;
 	--lg-margin: 10em;
 	--md-margin: 5em;
@@ -66,7 +68,7 @@
 		--text-height: 1.25;
 
 		/**WIDTH & HEIGHTS*/
-		--container-width: 95%;
+		--container-width: 90%;
 
 		/**PADDINGS & MARGINS*/
 		--label-padding: 0 0.25em;

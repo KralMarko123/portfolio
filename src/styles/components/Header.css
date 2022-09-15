@@ -1,0 +1,133 @@
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	background-color: var(--dark);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 2;
+}
+
+.header__nav {
+	width: var(--container-width);
+	padding: var(--simple-padding) 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__brand {
+	width: 50%;
+
+	text-align: start;
+}
+
+.nav__brand,
+.nav__list__link {
+	color: var(--light-accent);
+	font-size: var(--lg-text);
+}
+
+.nav__list {
+	width: 50%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: var(--normal-gap);
+}
+
+.nav__brand:hover,
+.nav__list__link:hover {
+	cursor: pointer;
+	color: var(--link);
+}
+
+.nav__brand a,
+.nav__list__link a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/**MOBILE NAV*/
+.nav__overlay {
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	background-color: rgba(0, 0, 0, 0.75);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 0;
+	z-index: -1;
+	transition: 0.15s ease-in-out;
+	pointer-events: none;
+}
+
+.nav__overlay.open {
+	opacity: 1;
+	z-index: 2;
+	touch-action: none;
+	pointer-events: fill;
+}
+
+.nav__overlay .nav__list {
+	width: var(--container-width);
+	height: 100%;
+	padding: var(--lg-padding) 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+	gap: var(--normal-gap);
+}
+
+.nav__toggle {
+	font-size: var(--lg-text);
+	color: var(--light-accent);
+}
+
+.nav__overlay .nav__toggle {
+	margin-bottom: auto;
+
+	opacity: 0;
+	transform: translateX(100px);
+
+	transition: 0.15s ease-in-out;
+	transition-delay: 0.15s;
+}
+
+.nav__overlay .nav__list__link {
+	font-size: var(--lg-text);
+
+	opacity: 0;
+	transform: translateX(100px);
+
+	transition: 0.15s ease-in-out;
+	transition-delay: 0.15s;
+}
+
+.nav__overlay.open .nav__toggle,
+.nav__overlay.open .nav__list__link {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+@media (max-width: 1199px) {
+	.header__nav {
+		width: var(--container-width);
+	}
+}

@@ -20,7 +20,7 @@ const ToolsSection = () => {
 	}, [toolsInView]);
 
 	return (
-		<section className="tools">
+		<section className="tools" id="tools">
 			<h1 className="tools__title">Tools:</h1>
 			<p className="tools__desc">
 				// I think I can pick up anything quickly if need be, but these are my go-to

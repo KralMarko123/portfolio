@@ -16,7 +16,7 @@ const ContactSection = () => {
 	}, [contactIsInView]);
 
 	return (
-		<section className="contact">
+		<section className="contact" id="contact">
 			<h1 className="contact__title">Contact:</h1>
 			<motion.div
 				className="contact__info"

@@ -1,11 +1,43 @@
-import { React, useRef, useEffect } from "react";
+import { React, useRef, useState, useEffect } from "react";
 import { FaVideo, FaGithub, FaLink } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { VARIANTS } from "../constants/AnimationVariants";
 import "../styles/components/Project.css";
 
-const Project = ({ id, video, poster, title, description, stack, links }) => {
+const Project = ({
+	id,
+	video,
+	mobileVideo,
+	poster,
+	mobilePoster,
+	title,
+	description,
+	stack,
+	links,
+}) => {
+	//Resize logic
+	const [isMobile, setIsMobile] = useState(false);
+	const reloadVideo = () => {
+		projectVideo.current.load();
+		projectVideo.current.play();
+	};
+
+	useEffect(() => {
+		const checkMobile = () => {
+			window.innerWidth <= 767
+				? setIsMobile(true) && reloadVideo()
+				: setIsMobile(false) && reloadVideo();
+		};
+		checkMobile();
+
+		window.addEventListener("resize", checkMobile);
+		return () => {
+			window.removeEventListener("resize", checkMobile);
+		};
+	}, [isMobile]);
+
+	//Animation logic
 	const projectVideo = useRef();
 	const toggleVideo = (shouldPlay) => {
 		shouldPlay ? projectVideo.current.play() : projectVideo.current.pause();
@@ -37,8 +69,12 @@ const Project = ({ id, video, poster, title, description, stack, links }) => {
 				animate={projectAnimation}
 				initial={VARIANTS.simple["hidden"]}
 			>
-				<video autoPlay muted loop poster={poster} ref={projectVideo}>
-					<source src={video} type="video/mp4" />
+				<video autoPlay muted loop poster={isMobile ? mobilePoster : poster} ref={projectVideo}>
+					<source
+						src={isMobile ? mobileVideo : video}
+						type="video/mp4"
+						onChange={() => console.log("changed")}
+					/>
 					Your browser does not support the video tag.
 				</video>
 
