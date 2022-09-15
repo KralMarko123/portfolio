@@ -7,7 +7,7 @@ import Header from "../components/layout/Header";
 import ProjectsSection from "../components/ProjectsSection";
 import ToolsSection from "../components/ToolsSection";
 import "../styles/general/page.css";
-import "../styles/Home.css";
+import "../styles/pages/Home.css";
 
 const Home = () => {
 	return (
