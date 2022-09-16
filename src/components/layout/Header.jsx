@@ -1,9 +1,9 @@
 import { React, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { VARIANTS } from "../../constants/AnimationVariants";
+import { navTitles } from "../../constants/Misc";
 import "../../styles/components/Header.css";
 
-const navTitles = ["projects", "tools", "bio", "contact"];
 const handleScrollTo = (name) => {
 	const elementToScrollTo = document.getElementById(name);
 	elementToScrollTo.scrollIntoView();

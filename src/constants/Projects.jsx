@@ -12,6 +12,11 @@ import yeVideo from "../assets/videos/ye.mp4";
 import yeMobileVideo from "../assets/videos/ye_mobile.mp4";
 import travellandPoster from "../assets/images/travelland.jpg";
 import travellandVideo from "../assets/videos/travelland.mp4";
+import designsPoster from "../assets/images/designs.jpg";
+import designsMobilePoster from "../assets/images/designs_mobile.jpg";
+import designsVideo from "../assets/videos/designs.mp4";
+import designsMobileVideo from "../assets/videos/designs_mobile.mp4";
+import { ROUTES } from "../routes/ROUTES";
 
 export const PROJECTS = [
 	{
@@ -90,6 +95,21 @@ export const PROJECTS = [
 		links: {
 			git: "https://github.com/viktorijaMi/TravelLand/tree/marko-testing",
 			demo: "https://drive.google.com/file/d/1s2oANt2ce0uHpz_lYfkFdBx_mv314MbG/view?usp=sharing",
+		},
+	},
+
+	{
+		id: "designs",
+		video: designsVideo,
+		mobileVideo: designsMobileVideo,
+		poster: designsPoster,
+		mobilePoster: designsMobilePoster,
+		title: "Design Portfolio",
+		description:
+			"All of the designs I've coded personally in order to practice my front-end skills or just try learning new tools.",
+		stack: ["HTML", "CSS (SCSS)", "JS"],
+		links: {
+			live: ROUTES.designs,
 		},
 	},
 ];

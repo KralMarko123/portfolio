@@ -2,14 +2,10 @@ import { React, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { VARIANTS } from "../constants/AnimationVariants";
+import { toolTitles, beTools, feTools, other } from "../constants/Misc";
 import "../styles/components/ToolsSection.css";
 
 const ToolsSection = () => {
-	const toolTitles = ["Back-End", "Front-End", "Other"];
-	const beTools = ["C#", "Java", ".NET", "Spring"];
-	const feTools = ["React", "HTML", "CSS", "SCSS/SASS", "JavaScript", "jQuery"];
-	const other = ["Git", "Cypress", "Selenium", "TDD"];
-
 	const [toolsRef, toolsInView] = useInView({ threshold: 0.1, triggerOnce: true });
 	const toolsAnimation = useAnimation();
 

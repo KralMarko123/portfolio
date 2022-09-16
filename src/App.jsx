@@ -1,16 +1,14 @@
 import React from "react";
-import Home from "./pages/Home";
-import Designs from "./pages/Designs";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import AnimatedRoutes from "./components/helper/AnimatedRoutes";
+import ScrollToTop from "./components/helper/ScrollToTop";
 
 const App = () => {
 	return (
 		<>
 			<Router>
-				<Routes>
-					<Route path="" element={<Home />} />
-					<Route path="/designs" element={<Designs />} />
-				</Routes>
+				<ScrollToTop />
+				<AnimatedRoutes />
 			</Router>
 		</>
 	);

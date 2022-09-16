@@ -1,4 +1,5 @@
 import { React, useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaVideo, FaGithub, FaLink } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -53,6 +54,9 @@ const Project = ({
 		}
 	}, [projectInView, infoInView]);
 
+	//Navigation logic
+	let navigate = useNavigate();
+
 	return (
 		<>
 			<motion.div
@@ -92,16 +96,18 @@ const Project = ({
 				</div>
 				<span className="info__title">// Check it out</span>
 				<div className="info__links">
-					<a href={links.git} className="info__links__link" target="_blank">
-						Source code {<FaGithub className="link__badge" />}
-					</a>
+					{links.git && (
+						<a href={links.git} className="info__links__link" target="_blank">
+							Source code {<FaGithub className="link__badge" />}
+						</a>
+					)}
 					{links.demo && (
 						<a href={links.demo} className="info__links__link" target="_blank">
 							Demo Video {<FaVideo className="link__badge" />}
 						</a>
 					)}
 					{links.live && (
-						<a href={links.live} className="info__links__link" target="_blank">
+						<a className="info__links__link" onClick={() => navigate(links.live)}>
 							Visit the site {<FaLink className="link__badge" />}
 						</a>
 					)}
