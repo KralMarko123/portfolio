@@ -107,8 +107,13 @@ const Project = ({
 						</a>
 					)}
 					{links.live && (
-						<a className="info__links__link" onClick={() => navigate(links.live)}>
+						<a href={links.live} className="info__links__link" target="_blank">
 							Visit the site {<FaLink className="link__badge" />}
+						</a>
+					)}
+					{links.page && (
+						<a className="info__links__link" onClick={() => navigate(links.page)}>
+							Click here {<FaLink className="link__badge" />}
 						</a>
 					)}
 				</div>

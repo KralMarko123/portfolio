@@ -1,4 +1,5 @@
 {
+	"homepage": "http://markomarkovikj.com/",
 	"author": "Marko Markovikj",
 	"dependencies": {
 		"framer-motion": "^7.3.3",

@@ -120,6 +120,7 @@
 }
 
 .info__links__link:hover {
+	cursor: pointer;
 	color: var(--link);
 }
 

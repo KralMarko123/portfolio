@@ -109,7 +109,7 @@ export const PROJECTS = [
 			"All of the designs I've coded personally in order to practice my front-end skills or just try learning new tools.",
 		stack: ["HTML", "CSS (SCSS)", "JS"],
 		links: {
-			live: ROUTES.designs,
+			page: ROUTES.designs,
 		},
 	},
 ];
