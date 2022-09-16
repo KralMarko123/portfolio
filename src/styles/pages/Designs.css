@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	padding: var(--lg-padding) 0;
 }
 
 .designs__list {
@@ -61,4 +63,11 @@
 
 .designs__list__design:hover .design__info {
 	opacity: 0;
+}
+
+@media (max-width: 1199px) {
+	.designs__list__design {
+		width: calc(50% - var(--normal-gap));
+		height: 250px;
+	}
 }
