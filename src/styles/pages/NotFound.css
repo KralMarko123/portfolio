@@ -1,0 +1,18 @@
+.notfound {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.notfound__title {
+	width: var(--container-width);
+
+	color: var(--light-accent);
+	font-size: var(--xl-text);
+	text-align: center;
+}
+
+.notfound__title:hover {
+	cursor: pointer;
+	color: var(--link);
+}

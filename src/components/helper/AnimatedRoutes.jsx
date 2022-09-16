@@ -4,6 +4,7 @@ import Designs from "../../pages/Designs";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { ROUTES } from "../../routes/ROUTES";
+import NotFound from "../../pages/NotFound";
 
 const AnimatedRoutes = () => {
 	const location = useLocation();
@@ -13,6 +14,7 @@ const AnimatedRoutes = () => {
 			<Routes location={location} key={location.pathname}>
 				<Route path={ROUTES.home} element={<Home />} />
 				<Route path={ROUTES.designs} element={<Designs />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</AnimatePresence>
 	);
