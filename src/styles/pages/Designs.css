@@ -89,7 +89,7 @@
 	transition: all 0.25s ease-in-out;
 }
 
-.designs__list__design a {
+.design a {
 	text-decoration: none;
 }
 
@@ -111,6 +111,8 @@
 .design__info__title {
 	font-size: var(--lg-text);
 	color: var(--light-accent);
+
+	text-decoration: none;
 }
 
 .design:hover {

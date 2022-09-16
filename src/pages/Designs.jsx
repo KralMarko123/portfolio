@@ -34,7 +34,7 @@ const Designs = () => {
 						<li className="design" style={{ backgroundImage: `url(${design.poster})` }}>
 							<a href={design.link} target="_blank">
 								<div className="design__info">
-									<h3 className="design__info__title">{design.title}</h3>
+									<span className="design__info__title">{design.title}</span>
 								</div>
 							</a>
 						</li>

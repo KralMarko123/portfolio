@@ -1,6 +1,4 @@
 {
-	"name": "Marko Markovikj - Portfolio",
-	"homepage": "https://markomarkovikj.com/",
 	"author": "Marko Markovikj",
 	"dependencies": {
 		"framer-motion": "^7.3.3",
