@@ -18,6 +18,7 @@ import socialProofPoster from "../assets/images/socialproof.jpg";
 import statsPreviewPoster from "../assets/images/statspreview.jpg";
 import sunnysidePoster from "../assets/images/sunnyside.jpg";
 import threeColumnPoster from "../assets/images/threecolumn.jpg";
+import orkaPoster from "../assets/images/orka.jpg";
 
 const DESIGNS_BASE_URL = "https://designs.markomarkovikj.com";
 
@@ -140,5 +141,11 @@ export const DESIGNS = [
 		title: "Three Column Preview",
 		link: `${DESIGNS_BASE_URL}/threecolumnpreview`,
 		poster: threeColumnPoster,
+	},
+
+	{
+		title: "Orka Menu",
+		link: `http://orka.mk/`,
+		poster: orkaPoster,
 	},
 ];
