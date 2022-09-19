@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { DESIGNS } from "../constants/Designs";
@@ -29,9 +29,9 @@ const Designs = () => {
 				</div>
 			</div>
 			<ul className="designs__list">
-				{DESIGNS.map((design) => {
+				{DESIGNS.map((design, i) => {
 					return (
-						<li className="design" style={{ backgroundImage: `url(${design.poster})` }}>
+						<li key={i} className="design" style={{ backgroundImage: `url(${design.poster})` }}>
 							<a href={design.link} target="_blank">
 								<div className="design__info">
 									<h3 className="design__info__title">{design.title}</h3>

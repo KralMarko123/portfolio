@@ -61,7 +61,7 @@ export const VARIANTS = {
 		enter: {
 			opacity: 1,
 			y: 0,
-			transition: { type: "spring", delay: 0.5, duration: 0.5 },
+			transition: { type: "spring", delay: 0.6, duration: 0.5 },
 		},
 
 		hidden: {

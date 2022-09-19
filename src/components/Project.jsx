@@ -112,7 +112,16 @@ const Project = ({
 						</a>
 					)}
 					{links.page && (
-						<a className="info__links__link" onClick={() => navigate(links.page)}>
+						<a
+							className="info__links__link"
+							onClick={() => {
+								navigate(links.page);
+								setTimeout(() => {
+									console.log("neso");
+									window.scrollTo(0, 0);
+								}, 100);
+							}}
+						>
 							Click here {<FaLink className="link__badge" />}
 						</a>
 					)}
