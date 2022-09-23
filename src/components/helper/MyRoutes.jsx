@@ -8,9 +8,9 @@ import NotFound from "../../pages/NotFound";
 const MyRoutes = () => {
 	return (
 		<Routes>
-			<Route path="" element={<Home />} />
-			<Route path={ROUTES.home} element={<Home />} />
-			<Route path={ROUTES.designs} element={<Designs />} />
+			<Route exact path="" element={<Home />} />
+			<Route exact path={ROUTES.home} element={<Home />} />
+			<Route exact path={ROUTES.designs} element={<Designs />} />
 			<Route path="*" element={<NotFound />} />
 		</Routes>
 	);
