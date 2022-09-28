@@ -19,6 +19,7 @@ import statsPreviewPoster from "../assets/images/statspreview.jpg";
 import sunnysidePoster from "../assets/images/sunnyside.jpg";
 import threeColumnPoster from "../assets/images/threecolumn.jpg";
 import orkaPoster from "../assets/images/orka.jpg";
+import notificationsPoster from "../assets/images/notifications.jpg";
 
 const DESIGNS_BASE_URL = "https://designs.markomarkovikj.com";
 
@@ -39,6 +40,12 @@ export const DESIGNS = [
 		title: "Advice Generator",
 		link: `${DESIGNS_BASE_URL}/advicegenerator`,
 		poster: advideGeneratorPoster,
+	},
+
+	{
+		title: "Notifications page",
+		link: `${DESIGNS_BASE_URL}/notifications`,
+		poster: notificationsPoster,
 	},
 
 	{
