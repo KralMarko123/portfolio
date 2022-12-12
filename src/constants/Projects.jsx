@@ -1,7 +1,9 @@
 import cypressPoster from "../assets/images/cypress.jpg";
 import cypressVideo from "../assets/videos/cypress.mp4";
-import ecinemaPoster from "../assets/images/ecinema.jpg";
-import ecinemaVideo from "../assets/videos/ecinema.mp4";
+import postsPoster from "../assets/images/posts.jpg";
+import postsMobilePoster from "../assets/images/postsMobile.jpg";
+import postsVideo from "../assets/videos/postsVideo.mp4";
+import postsMobileVideo from "../assets/videos/postsMobileVideo.mp4";
 import wbsPoster from "../assets/images/wbs.jpg";
 import wbsMobilePoster from "../assets/images/wbs_mobile.jpg";
 import wbsVideo from "../assets/videos/wbs.mp4";
@@ -20,6 +22,21 @@ import { ROUTES } from "../routes/ROUTES";
 
 export const PROJECTS = [
 	{
+		id: "posts",
+		video: postsVideo,
+		mobileVideo: postsMobileVideo,
+		poster: postsPoster,
+		mobilePoster: postsMobilePoster,
+		title: "Posts By Marko",
+		description:
+			"A project I work on consistently trying to add features mimicking the SDLC. It poses as a post sharing website where users can register, share posts and see each others changes in real time using SignalR. It is currently hosted on Azure using a simple workflow.",
+		stack: [".NET", "C#", "EF", "xUnit", "PlayWright", "React", "CSS"],
+		links: {
+			live: "https://posts.markomarkovikj.com",
+		},
+	},
+
+	{
 		id: "cypress",
 		video: cypressVideo,
 		mobileVideo: cypressVideo,
@@ -28,25 +45,9 @@ export const PROJECTS = [
 		title: "Cypress Test Framework",
 		description:
 			"A testing framework covering numerous placeholder sites using Cypress. It consists of written E2E scenarios covered with automated scripts.",
-		stack: ["Cypress", "JavaScript"],
+		stack: ["Cypress", "JS"],
 		links: {
 			git: "https://github.com/KralMarko123/test-automation-framework",
-		},
-	},
-
-	{
-		id: "ecinema",
-		video: ecinemaVideo,
-		mobileVideo: ecinemaVideo,
-		poster: ecinemaPoster,
-		mobilePoster: ecinemaPoster,
-		title: "ECinema App",
-		description:
-			"A project I made during my studies. Features include invoice creation, excel imports/exports, cart management, Stripe payments.",
-		stack: [".NET", "C#", "Bootstrap", "EF", "MySQL"],
-		links: {
-			git: "https://github.com/KralMarko123/ECinemaTicket",
-			demo: "https://drive.google.com/file/d/1DB6NtPK3cIR21pPTPfaLolEbqGYGzD7o/view?usp=sharing",
 		},
 	},
 
@@ -93,7 +94,6 @@ export const PROJECTS = [
 			"A Selenium project covering the functionality of a travel agency app. The project includes DB, API & FE tests.",
 		stack: ["C#", "Selenium", "NUnit", "POM"],
 		links: {
-			git: "https://github.com/viktorijaMi/TravelLand/tree/marko-testing",
 			demo: "https://drive.google.com/file/d/1s2oANt2ce0uHpz_lYfkFdBx_mv314MbG/view?usp=sharing",
 		},
 	},
