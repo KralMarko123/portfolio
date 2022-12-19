@@ -94,7 +94,7 @@ export const PROJECTS = [
 			"A Selenium project covering the functionality of a travel agency app. The project includes DB, API & FE tests.",
 		stack: ["C#", "Selenium", "NUnit", "POM"],
 		links: {
-			demo: "https://drive.google.com/file/d/1s2oANt2ce0uHpz_lYfkFdBx_mv314MbG/view?usp=sharing",
+			demo: "https://www.youtube.com/watch?v=kaUjHGW3gNw",
 		},
 	},
 
