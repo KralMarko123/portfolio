@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../../assets/images/marko.jpg";
+import profilePicture from "../../assets/images/markoProfilePicture.jpg";
 import { TbArrowNarrowDown } from "react-icons/tb";
 import "./Intro.css";
 
@@ -12,14 +12,14 @@ const Intro = () => {
 					<p>A down-to-earth, calm, determined 24 year old software engineer.</p>
 					<p>
 						When I'm not in front of a computer screen, I teach dance and play pool. I am currently
-						a senior technician at
+						a senior technician at{" "}
 						<a href="https://www.endava.com/en/about/locations/adriatic/skopje" target="_blank">
 							Endava
 						</a>
 						.
 					</p>
 				</div>
-				<img src={profileImage} alt="profile-image" className="intro__image" />
+				<img src={profilePicture} alt="profile-image" className="intro__image" />
 			</div>
 			<div className="intro__bottom">
 				<TbArrowNarrowDown className="intro__arrow enter" />
