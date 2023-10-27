@@ -1,14 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import MyRoutes from "./components/helper/MyRoutes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ROUTES } from "./constants/ROUTES";
+import Home from "./pages/Home/Home";
+import Designs from "./pages/Designs/Designs";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
 	return (
-		<>
-			<Router>
-				<MyRoutes />
-			</Router>
-		</>
+		<BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
+			<Routes>
+				<Route exact path="" element={<Home />} />
+				<Route exact path={ROUTES.HOME} element={<Home />} />
+				<Route exact path={ROUTES.DESIGNS} element={<Designs />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
+		</BrowserRouter>
 	);
 };
 

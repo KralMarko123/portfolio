@@ -1,7 +1,7 @@
 import { React } from "react";
 import Project from "./Project";
-import { PROJECTS } from "../../src/constants/Projects";
-import "../styles/components/ProjectsSection.css";
+import { PROJECTS } from "../../constants/PROJECTS";
+import "./ProjectsSection.css";
 
 const ProjectsSection = () => {
 	return (

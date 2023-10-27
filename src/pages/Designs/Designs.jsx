@@ -1,29 +1,21 @@
 import { React } from "react";
-import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { DESIGNS } from "../constants/Designs";
-import { VARIANTS } from "../constants/AnimationVariants";
-import { ROUTES } from "../routes/ROUTES";
-import "../styles/general/page.css";
-import "../styles/pages/Designs.css";
+import { DESIGNS } from "../../constants/DESIGNS";
+import {ROUTES} from "../../constants/ROUTES";
+import "./Designs.css";
 
 const Designs = () => {
-	let navigate = useNavigate();
+	const navigate = useNavigate();
 
 	return (
-		<motion.div
-			className="designs page"
-			animate={VARIANTS.page.enter}
-			initial={VARIANTS.page.hidden}
-			exit={VARIANTS.page.exit}
-		>
+		<div className="designs page">
 			<div className="designs__info">
 				<div className="designs__info__left">
 					<h1 className="designs__info__title">Designs:</h1>
 					<span className="designs__info__desc">// Clicking on a card opens up a new tab</span>
 				</div>
 				<div className="designs__info__right">
-					<div className="designs__back__button" onClick={() => navigate(ROUTES.home)}>
+					<div className="designs__back__button" onClick={() => navigate(ROUTES.HOME)}>
 						back.
 					</div>
 				</div>
@@ -41,7 +33,7 @@ const Designs = () => {
 					);
 				})}
 			</ul>
-		</motion.div>
+		</div>
 	);
 };
 
