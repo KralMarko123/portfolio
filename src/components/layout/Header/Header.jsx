@@ -7,7 +7,10 @@ const Header = () => {
 	return (
 		<header className="header">
 			<nav className="header__nav">
-				<div className="nav__brand" onClick={() => document.getElementById("intro")}>
+				<div
+					className="nav__brand"
+					onClick={() => document.getElementById("intro").scrollIntoView()}
+				>
 					marko.markovikj
 				</div>
 				<span className="nav-mobile__toggle" onClick={() => setIsOpen(true)}>

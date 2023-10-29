@@ -15,19 +15,19 @@ export const PROJECTS = [
 	{
 		id: "postsByMarko",
 		title: "Posts By Marko",
-		thumbnail: postsByMarkoThumbnail,
-		mobileThumbnail: postsByMarkoMobileThumbnail,
 		description:
 			"A project I work on consistently trying to add features mimicking the SDLC. It is a post sharing website where users can register, share posts and see each others changes in real time using SignalR.",
 		stack: [".NET", "C#", "EF", "xUnit", "PlayWright", "React", "CSS", "Docker"],
 		links: [],
+		thumbnail: postsByMarkoThumbnail,
+		mobileThumbnail: postsByMarkoMobileThumbnail,
+		extraParagraph:
+			"I plan on using this project in the near future. Source code or demos can be shown upon request!",
 	},
 
 	{
 		id: "reactChallenges",
 		title: "React Challenges",
-		thumbnail: reactChallengesThumbnail,
-		mobileThumbnail: reactChallengesMobileThumbnail,
 		description:
 			"A collection of different challenges written in React. Point of the site is for me to have a space to practice different skills/solutions explicitly in React.",
 		stack: ["React", "CSS"],
@@ -43,12 +43,12 @@ export const PROJECTS = [
 				icon: <FaLink />,
 			},
 		],
+		thumbnail: reactChallengesThumbnail,
+		mobileThumbnail: reactChallengesMobileThumbnail,
 	},
 
 	{
 		id: "cypress",
-		thumbnail: cypressThumbnail,
-		mobileThumbnail: cypressThumbnail,
 		title: "Cypress Test Framework",
 		description:
 			"A testing framework covering numerous placeholder sites using Cypress. It consists of written E2E scenarios covered with automated scripts.",
@@ -60,12 +60,12 @@ export const PROJECTS = [
 				icon: <FaGithub />,
 			},
 		],
+		thumbnail: cypressThumbnail,
+		mobileThumbnail: cypressThumbnail,
 	},
 
 	{
 		id: "nbaviewer",
-		thumbnail: wbsThumbnail,
-		mobileThumbnail: wbsMobileThumbnail,
 		title: "Web Based Systems NBA Viewer",
 		description:
 			"A React app that sends out SPARQL queries using a third party library. It fetches NBA players from an RDF database and renders the results accordingly.",
@@ -82,12 +82,12 @@ export const PROJECTS = [
 				icon: <FaLink />,
 			},
 		],
+		thumbnail: wbsThumbnail,
+		mobileThumbnail: wbsMobileThumbnail,
 	},
 
 	{
 		id: "travelland",
-		thumbnail: travellandThumbnail,
-		mobileThumbnail: travellandThumbnail,
 		title: "TravelLand Testing Framework",
 		description:
 			"A Selenium project covering the functionality of a travel agency app. The project includes DB, API & FE tests.",
@@ -99,12 +99,12 @@ export const PROJECTS = [
 				icon: <FaCamera />,
 			},
 		],
+		thumbnail: travellandThumbnail,
+		mobileThumbnail: travellandThumbnail,
 	},
 
 	{
 		id: "designs",
-		thumbnail: designsThumbnail,
-		mobileThumbnail: designsMobileThumbnail,
 		title: "Design Portfolio",
 		description:
 			"All of the designs I've coded personally in order to practice my front-end skills or just try learning new tools.",
@@ -117,5 +117,7 @@ export const PROJECTS = [
 				icon: <FaLink />,
 			},
 		],
+		thumbnail: designsThumbnail,
+		mobileThumbnail: designsMobileThumbnail,
 	},
 ];

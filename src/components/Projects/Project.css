@@ -1,6 +1,15 @@
 .project {
 	width: 100%;
-	height: 600px;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--normal-gap);
+}
+
+.project-card {
+	width: 100%;
+	height: fit-content;
+	max-height: 500px;
 
 	border: var(--simple-border);
 	border-radius: var(--card-radius);
@@ -8,67 +17,57 @@
 
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 
-.project video {
+.project-thumbnail {
 	width: 100%;
-	height: 100%;
+
 	object-fit: cover;
-	overflow: hidden;
+	aspect-ratio: 16/9;
+
+	filter: brightness(80%);
+	transition: 0.5s ease-in-out;
 }
 
-.project__overlay {
-	width: 100%;
-	height: 100%;
+.project-card:hover .project-thumbnail {
+	filter: brightness(20%);
+	transform: scale(1.05);
+}
+
+.project-title {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0%;
+	left: 5%;
 
-	background-color: rgba(0, 0, 0, 0.85);
-
-	padding: 0 5%;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: var(--small-gap);
-
-	line-height: var(--text-height);
-	opacity: 0;
-	transition: 0.35s ease-in-out;
-}
-
-.project__title {
 	font-size: var(--lg-text);
 	font-weight: bold;
-	align-self: flex-start;
+
+	opacity: 0;
+	transition: 0.5s ease-in-out;
 }
 
-.project__description {
-	font-size: var(--md-text);
-	text-align: justify;
-}
-
-.project__title,
-.project__description {
-	transform: translateY(-20px);
-	transition: 0.35s ease-in-out;
-}
-
-.project:hover .project__overlay,
-.project:focus .project__overlay,
-.project:active .project__overlay {
+.project-card:hover .project-title {
+	top: 40%;
 	opacity: 1;
 }
 
-.project:hover .project__title,
-.project:hover .project__description,
-.project:focus .project__title,
-.project:focus .project__description,
-.project:active .project__title,
-.project:active .project__description {
-	transform: translateY(0);
+.project-description {
+	position: absolute;
+	top: 0%;
+	left: 5%;
+	right: 5%;
+
+	font-size: var(--md-text);
+	text-align: justify;
+
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+}
+
+.project-card:hover .project-description {
+	top: 50%;
+	opacity: 1;
 }
 
 .info {
@@ -80,19 +79,19 @@
 	gap: var(--small-gap);
 }
 
-.info__title {
-	font-size: var(--md-text);
+.info-title {
+	font-size: var(--sm-text);
 	letter-spacing: var(--text-spacing);
 	opacity: 0.5;
 }
 
-.info__stacks {
+.stack-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--normal-gap);
 }
 
-.info__stacks__stack {
+.info-stack {
 	padding: var(--label-padding);
 	background-color: var(--dark-accent);
 
@@ -101,14 +100,14 @@
 	font-weight: bold;
 }
 
-.info__links {
+.info-links {
 	display: flex;
 	justify-content: left;
 	align-items: center;
 	gap: var(--normal-gap);
 }
 
-.info__links__link {
+.info-link {
 	font-size: var(--md-text);
 	text-decoration: none;
 	color: var(--light-accent);
@@ -119,17 +118,12 @@
 	gap: var(--small-gap);
 }
 
-.info__links__link:hover {
+.info-link:hover {
 	cursor: pointer;
 	color: var(--link);
 }
 
-.link__badge {
+.info-paragraph {
 	font-size: var(--md-text);
-}
-
-@media (max-width: 767px) {
-	.project {
-		height: 500px;
-	}
+	color: var(--light);
 }

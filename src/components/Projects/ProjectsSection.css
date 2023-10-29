@@ -9,7 +9,7 @@
 	gap: var(--normal-gap);
 }
 
-.projects__title {
+.projects-title {
 	width: fit-content;
 	padding: var(--label-padding);
 	background-color: var(--dark-accent);
