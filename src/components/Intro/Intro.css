@@ -46,7 +46,7 @@
 }
 
 .intro__image {
-	width: 450px;
+	width: 500px;
 	border-radius: var(--card-radius);
 	border: var(--simple-border);
 	box-shadow: var(--simple-shadow);
