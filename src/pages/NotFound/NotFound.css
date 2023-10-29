@@ -4,15 +4,17 @@
 	align-items: center;
 }
 
-.notfound__title {
-	width: var(--container-width);
+.notfound-title {
+	padding: 0 var(--s-padding);
+	background-color: var(--dark-accent);
 
 	color: var(--light-accent);
+	font-weight: bold;
 	font-size: var(--xl-text);
-	text-align: center;
+
+	cursor: pointer;
 }
 
-.notfound__title:hover {
-	cursor: pointer;
-	color: var(--link);
+.notfound-title:hover {
+	opacity: 0.75;
 }

@@ -8,10 +8,10 @@ const Bio = () => {
 
 	return (
 		<section className="bio" id="bio">
-			<h1 className="bio__title">Bio:</h1>
+			<h1 className="bio-title">Bio:</h1>
 			{BIOS.map((bio, i) => (
-				<p className="bio__row" key={i} ref={ref}>
-					<span className="bio__row__year">{bio.year}</span>
+				<p className="bio-row" key={i} ref={ref}>
+					<span className="bio-year">{bio.year}</span>
 					{bio.text}
 				</p>
 			))}

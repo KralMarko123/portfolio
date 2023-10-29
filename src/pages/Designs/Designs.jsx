@@ -1,7 +1,7 @@
 import { React } from "react";
 import { useNavigate } from "react-router-dom";
 import { DESIGNS } from "../../constants/DESIGNS";
-import {ROUTES} from "../../constants/ROUTES";
+import { ROUTES } from "../../constants/ROUTES";
 import "./Designs.css";
 
 const Designs = () => {
@@ -9,24 +9,24 @@ const Designs = () => {
 
 	return (
 		<div className="designs page">
-			<div className="designs__info">
-				<div className="designs__info__left">
-					<h1 className="designs__info__title">Designs:</h1>
-					<span className="designs__info__desc">// Clicking on a card opens up a new tab</span>
+			<div className="designs-info">
+				<div className="designs-info-left">
+					<h1 className="designs-title">Designs:</h1>
+					<span className="designs-description">// Clicking on a card opens up a new tab</span>
 				</div>
-				<div className="designs__info__right">
-					<div className="designs__back__button" onClick={() => navigate(ROUTES.HOME)}>
+				<div className="designs-info-right">
+					<div className="designs-back" onClick={() => navigate(ROUTES.HOME)}>
 						back.
 					</div>
 				</div>
 			</div>
-			<ul className="designs__list">
-				{DESIGNS.map((design, i) => {
+			<ul className="designs-list">
+				{DESIGNS.map((d, i) => {
 					return (
-						<li key={i} className="design" style={{ backgroundImage: `url(${design.poster})` }}>
-							<a href={design.link} target="_blank">
-								<div className="design__info">
-									<h3 className="design__info__title">{design.title}</h3>
+						<li key={i} className="design" style={{ backgroundImage: `url(${d.thumbnail})` }}>
+							<a href={d.link} target="_blank">
+								<div className="design-info">
+									<h3 className="design-info-title">{d.title}</h3>
 								</div>
 							</a>
 						</li>

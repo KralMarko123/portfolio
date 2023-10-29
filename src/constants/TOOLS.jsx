@@ -1,16 +1,16 @@
 export const TOOLS = [
 	{
-		title: "Back-End",
+		title: "Backend",
 		items: ["C#", "Java", ".NET", "Spring"],
 	},
 
 	{
-		title: "Front-End",
-		items: ["React", "HTML", "CSS", "SCSS/SASS", "JavaScript", "jQuery"],
+		title: "Frontend",
+		items: ["React", "HTML", "CSS", "SCSS/SASS", "Javascript"],
 	},
 
 	{
 		title: "Other",
-		items: ["Git", "Cypress", "Selenium", "PlayWright", "TDD"],
+		items: ["Git", "Cypress", "Selenium", "Playwright"],
 	},
 ];

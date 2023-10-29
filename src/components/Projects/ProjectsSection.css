@@ -1,17 +1,17 @@
 .projects {
 	width: 100%;
-	margin-bottom: var(--sm-margin);
+	margin-bottom: var(--s-margin);
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: var(--normal-gap);
+	gap: var(--md-gap);
 }
 
 .projects-title {
 	width: fit-content;
-	padding: var(--label-padding);
+	padding: 0 var(--s-padding);
 	background-color: var(--dark-accent);
 
 	color: var(--light-accent);

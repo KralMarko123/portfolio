@@ -1,4 +1,4 @@
-import { React } from "react";
+import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import "./Project.css";
 
@@ -14,13 +14,26 @@ const Project = ({
 }) => {
 	const { projectRef, projectInView } = useInView({ threshold: 0.1, triggerOnce: true });
 	const { infoRef, infoInView } = useInView({ threshold: 0.1, triggerOnce: true });
+	const [width, setWidth] = useState(window.innerWidth);
 
-	console.log(extraParagraph);
+	const handleWindowSizeChange = () => {
+		setWidth(window.innerWidth);
+	};
+	useEffect(() => {
+		window.addEventListener("resize", handleWindowSizeChange);
+		return () => window.removeEventListener("resize", handleWindowSizeChange);
+	}, []);
+
+	const isMobile = width <= 768;
 
 	return (
 		<div id={id} className="project" ref={projectRef}>
 			<div className="project-card">
-				<img className="project-thumbnail" src={thumbnail} alt={`${title}-thumbnail`} />
+				<img
+					className="project-thumbnail"
+					src={isMobile ? mobileThumbnail : thumbnail}
+					alt={`${title}-thumbnail`}
+				/>
 				<h1 className="project-title">{title}</h1>
 				<p className="project-description">{description}</p>
 			</div>

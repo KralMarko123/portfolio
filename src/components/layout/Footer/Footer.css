@@ -1,14 +1,14 @@
 .footer {
+	padding-bottom: var(--s-padding);
+
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	gap: var(--small-gap);
-
-	padding-bottom: var(--simple-padding);
+	gap: var(--s-gap);
 }
 
 .footer__text {
-	font-size: var(--sm-text);
-	letter-spacing: var(--md-spacing);
+	font-size: var(--xs-text);
+	letter-spacing: var(--text-spacing);
 }

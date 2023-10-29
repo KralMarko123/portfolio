@@ -8,9 +8,9 @@ const NotFound = () => {
 
 	return (
 		<div className="notfound page">
-			<span className="notfound__title" onClick={() => navigate(ROUTES.HOME)}>
-				Looks like there isn't anything here. Click on me to go back to the homepage.
-			</span>
+			<h1 className="notfound-title" onClick={() => navigate(ROUTES.HOME)}>
+				You wandered off, click here to go back.
+			</h1>
 		</div>
 	);
 };

@@ -1,9 +1,10 @@
 .project {
 	width: 100%;
+	margin-bottom: var(--s-margin);
 
 	display: flex;
 	flex-direction: column;
-	gap: var(--normal-gap);
+	gap: var(--s-gap);
 }
 
 .project-card {
@@ -45,6 +46,7 @@
 
 	opacity: 0;
 	transition: 0.5s ease-in-out;
+	transform: translateY(-50%);
 }
 
 .project-card:hover .project-title {
@@ -63,24 +65,24 @@
 
 	opacity: 0;
 	transition: 0.5s ease-in-out;
+	transform: translateY(-50%);
 }
 
 .project-card:hover .project-description {
-	top: 50%;
+	top: 55%;
 	opacity: 1;
 }
 
 .info {
 	width: 100%;
-	margin-bottom: var(--sm-margin);
 
 	display: flex;
 	flex-direction: column;
-	gap: var(--small-gap);
+	gap: var(--s-gap);
 }
 
 .info-title {
-	font-size: var(--sm-text);
+	font-size: var(--s-text);
 	letter-spacing: var(--text-spacing);
 	opacity: 0.5;
 }
@@ -88,11 +90,11 @@
 .stack-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--normal-gap);
+	gap: var(--md-gap);
 }
 
 .info-stack {
-	padding: var(--label-padding);
+	padding: 0 var(--s-padding);
 	background-color: var(--dark-accent);
 
 	color: var(--light-accent);
@@ -104,7 +106,7 @@
 	display: flex;
 	justify-content: left;
 	align-items: center;
-	gap: var(--normal-gap);
+	gap: var(--md-gap);
 }
 
 .info-link {
@@ -115,7 +117,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: var(--small-gap);
+	gap: var(--s-gap);
 }
 
 .info-link:hover {
@@ -126,4 +128,48 @@
 .info-paragraph {
 	font-size: var(--md-text);
 	color: var(--light);
+}
+
+/** MOBILE STYLES */
+@media (max-width: 768px) {
+	.project {
+		margin-bottom: var(--xs-margin);
+	}
+
+	.project-card {
+		height: 400px;
+	}
+
+	.project-thumbnail {
+		height: 100%;
+		aspect-ratio: 9/16;
+	}
+
+	.project-title {
+		font-size: var(--md-text);
+	}
+
+	.project-card:hover .project-title {
+		top: 30%;
+	}
+
+	.project-description {
+		font-size: var(--s-text);
+	}
+
+	.project-card:hover .project-description {
+		top: 50%;
+	}
+
+	.info {
+		gap: var(--md-gap);
+	}
+
+	.info-title {
+		font-size: var(--s-text);
+	}
+
+	.info-paragraph {
+		font-size: var(--s-text);
+	}
 }

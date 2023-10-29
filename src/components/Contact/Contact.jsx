@@ -8,16 +8,16 @@ const Contact = () => {
 
 	return (
 		<section className="contact" id="contact">
-			<h1 className="contact__title">Contact:</h1>
-			<div className="contact__info" ref={ref}>
-				<p className="contact__info__text">
-					Want to ask me a question or get in touch? <br /> Feel free to send me an email or find me
-					on my other socials!
+			<h1 className="contact-title">Contact:</h1>
+			<div className="contact-info" ref={ref}>
+				<p className="contact-text">
+					Want to ask me a question or get in touch? Feel free to send me an email or find me on my
+					other socials!
 				</p>
 
-				<div className="contact__info__links">
+				<div className="contact-links">
 					{CONTACT_LINKS.map((cl) => (
-						<a key={cl.link} href={cl.link} target="_blank" className="social__link">
+						<a key={cl.link} href={cl.link} target="_blank" className="social-link">
 							{cl.icon}
 						</a>
 					))}
