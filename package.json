@@ -1,5 +1,5 @@
 {
-	"homepage": "http://markomarkovikj.com/",
+	"homepage": "http://markomarkovikj.com",
 	"author": "Marko Markovikj",
 	"dependencies": {
 		"react": "^18.2.0",

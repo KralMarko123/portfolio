@@ -10,6 +10,8 @@
 }
 
 .intro-top {
+	width: 100%;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,6 +19,8 @@
 }
 
 .intro-text {
+	width: 60%;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -47,10 +51,11 @@
 }
 
 .intro-image {
-	width: 100%;
+	width: 40%;
 	height: 600px;
 
 	object-fit: cover;
+	-o-object-fit: cover;
 	aspect-ratio: 16/9;
 
 	border-radius: var(--card-radius);
