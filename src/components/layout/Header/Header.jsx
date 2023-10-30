@@ -8,7 +8,7 @@ const Header = () => {
 
 	return (
 		<header className="header">
-			<nav className="nav">
+			<nav className="nav showAndEnterFromUp">
 				<div
 					className="nav-brand"
 					onClick={() => document.getElementById("intro").scrollIntoView()}
@@ -29,7 +29,7 @@ const Header = () => {
 				</ul>
 			</nav>
 
-			<nav className="mobile-nav">
+			<nav className="mobile-nav showAndEnterFromUp">
 				<div
 					className="nav-brand"
 					onClick={() => document.getElementById("intro").scrollIntoView()}

@@ -1,7 +1,6 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	scroll-padding: 100px;
 
 	font-size: 16px;
 	font-family: var(--main-font);

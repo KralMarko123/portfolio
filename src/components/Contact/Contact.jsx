@@ -4,12 +4,18 @@ import { CONTACT_LINKS } from "../../constants/LINKS";
 import "./Contact.css";
 
 const Contact = () => {
-	const { ref, inView, entry } = useInView({ threshold: 0.1, triggerOnce: true });
+	const [titleRef, titleInView] = useInView({ threshold: 0.5, triggerOnce: true });
+	const [contactRef, contactInView] = useInView({ threshold: 0.5, triggerOnce: true });
 
 	return (
 		<section className="contact" id="contact">
-			<h1 className="contact-title">Contact:</h1>
-			<div className="contact-info" ref={ref}>
+			<h1 className={`contact-title ${titleInView ? "show" : ""}`} ref={titleRef}>
+				Contact:
+			</h1>
+			<div
+				className={`contact-info ${contactInView ? "showAndEnterFromDown" : ""}`}
+				ref={contactRef}
+			>
 				<p className="contact-text">
 					Want to ask me a question or get in touch? Feel free to send me an email or find me on my
 					other socials!

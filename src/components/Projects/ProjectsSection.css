@@ -19,4 +19,6 @@
 	font-size: var(--xl-text);
 
 	align-self: flex-start;
+
+	opacity: 0;
 }

@@ -7,7 +7,7 @@ const Intro = () => {
 	return (
 		<section className="intro" id="intro">
 			<div className="intro-top">
-				<div className="intro-text">
+				<div className="intro-text showAndEnterFromLeft" style={{ animationDelay: "0.5s" }}>
 					<h1 className="intro-title">Hi! I'm Marko.</h1>
 					<p>A down-to-earth, calm, determined 24 year old software engineer.</p>
 					<p>
@@ -19,9 +19,14 @@ const Intro = () => {
 						.
 					</p>
 				</div>
-				<img src={profilePicture} alt="profile-image" className="intro-image" />
+				<img
+					src={profilePicture}
+					alt="profile-image"
+					className="intro-image show"
+					style={{ animationDelay: "1s" }}
+				/>
 			</div>
-			<TbArrowNarrowDown className="intro-arrow" />
+			<TbArrowNarrowDown className="intro-arrow showAndBob" style={{ animationDelay: "2s" }} />
 		</section>
 	);
 };

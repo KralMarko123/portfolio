@@ -29,6 +29,8 @@
 	font-size: var(--lg-text);
 	line-height: var(--text-height);
 	text-align: start;
+
+	opacity: 0;
 }
 
 .intro-title {
@@ -61,13 +63,15 @@
 	border-radius: var(--card-radius);
 	border: var(--simple-border);
 	box-shadow: var(--simple-shadow);
+
+	opacity: 0;
 }
 
 .intro-arrow {
 	font-size: 5rem;
 	stroke: var(--light-accent);
 
-	animation: bobUpAndDown infinite 0.5s alternate ease-in-out;
+	opacity: 0;
 }
 
 /** TABLET STYLES */

@@ -7,3 +7,111 @@
 		transform: translateY(20%);
 	}
 }
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes halfShow {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes enterFromUp {
+	0% {
+		transform: translateY(-50%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes enterFromDown {
+	0% {
+		transform: translateY(50%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes enterFromRight {
+	0% {
+		transform: translateX(50%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes enterFromLeft {
+	0% {
+		transform: translateX(-50%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.show {
+	animation: show forwards 0.5s ease-in;
+}
+
+.enterFromUp {
+	animation: enterFromUp forwards 0.5s ease-in;
+}
+
+.showAndEnterFromUp {
+	animation: show forwards 0.5s ease-in, enterFromUp forwards 0.5s ease-in;
+}
+
+.enterFromDown {
+	animation: enterFromDown forwards 0.5s ease-in;
+}
+
+.showAndEnterFromDown {
+	animation: show forwards 0.5s ease-in, enterFromDown forwards 0.5s ease-in;
+}
+
+.halfShowAndEnterFromDown {
+	animation: halfShow forwards 0.5s ease-in, enterFromDown forwards 0.5s ease-in;
+}
+
+.enterFromRight {
+	animation: enterFromRight forwards 0.5s ease-in;
+}
+
+.showAndEnterFromRight {
+	animation: show forwards 0.5s ease-in, enterFromRight forwards 0.5s ease-in;
+}
+
+.enterFromLeft {
+	animation: enterFromLeft forwards 0.5s ease-in;
+}
+
+.showAndEnterFromLeft {
+	animation: show forwards 0.5s ease-in, enterFromLeft forwards 0.5s ease-in;
+}
+
+.bobUpAndDown {
+	animation: bobUpAndDown infinite 0.5s alternate ease-in-out;
+}
+
+.showAndBob {
+	animation: show forwards 0.5s ease-in, bobUpAndDown infinite 0.5s alternate ease-in-out;
+}

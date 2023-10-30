@@ -12,8 +12,8 @@ const Project = ({
 	mobileThumbnail,
 	extraParagraph,
 }) => {
-	const { projectRef, projectInView } = useInView({ threshold: 0.1, triggerOnce: true });
-	const { infoRef, infoInView } = useInView({ threshold: 0.1, triggerOnce: true });
+	const [cardRef, cardInView] = useInView({ threshold: 0.5, triggerOnce: true });
+	const [infoRef, infoInView] = useInView({ threshold: 0.5, triggerOnce: true });
 	const [width, setWidth] = useState(window.innerWidth);
 
 	const handleWindowSizeChange = () => {
@@ -27,8 +27,8 @@ const Project = ({
 	const isMobile = width <= 768;
 
 	return (
-		<div id={id} className="project" ref={projectRef}>
-			<div className="project-card">
+		<div id={id} className="project">
+			<div className={`project-card ${cardInView ? "showAndEnterFromDown" : ""}`} ref={cardRef}>
 				<img
 					className="project-thumbnail"
 					src={isMobile ? mobileThumbnail : thumbnail}
@@ -37,7 +37,7 @@ const Project = ({
 				<h1 className="project-title">{title}</h1>
 				<p className="project-description">{description}</p>
 			</div>
-			<div className="info" ref={infoRef}>
+			<div className={`info ${infoInView ? "showAndEnterFromDown" : ""}`} ref={infoRef}>
 				<span className="info-title">// Tech Stack</span>
 				<div className="stack-list">
 					{stack.map((s) => {

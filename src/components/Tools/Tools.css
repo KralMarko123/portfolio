@@ -15,17 +15,22 @@
 	color: var(--light-accent);
 	font-weight: bold;
 	font-size: var(--xl-text);
+
+	opacity: 0;
 }
 
 .tools-description {
 	font-size: var(--md-text);
 	letter-spacing: var(--text-spacing);
-	opacity: 0.5;
+
+	opacity: 0;
 }
 
 .tools-container {
 	display: flex;
 	justify-content: space-between;
+
+	opacity: 0;
 }
 
 .tools-list {
