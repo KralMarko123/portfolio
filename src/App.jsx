@@ -9,7 +9,6 @@ const App = () => {
 	return (
 		<BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
 			<Routes>
-				<Route exact path="" element={<Home />} />
 				<Route exact path={ROUTES.HOME} element={<Home />} />
 				<Route exact path={ROUTES.DESIGNS} element={<Designs />} />
 				<Route path="*" element={<NotFound />} />
