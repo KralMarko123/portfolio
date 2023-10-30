@@ -62,7 +62,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
 
+	.nav-brand {
+		opacity: 0;
+	}
+
+	.mobile-nav > .nav-mobile-toggle {
 		opacity: 0;
 	}
 
@@ -76,7 +82,7 @@
 	.nav-overlay {
 		position: fixed;
 		top: 0;
-		right: 0;
+		left: 0;
 		width: 100%;
 		height: 100%;
 

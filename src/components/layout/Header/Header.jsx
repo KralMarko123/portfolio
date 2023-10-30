@@ -29,15 +29,15 @@ const Header = () => {
 				</ul>
 			</nav>
 
-			<nav className="mobile-nav showAndEnterFromUp">
+			<nav className="mobile-nav">
 				<div
-					className="nav-brand"
+					className="nav-brand showAndEnterFromUp"
 					onClick={() => document.getElementById("intro").scrollIntoView()}
 				>
 					marko.markovikj
 				</div>
 
-				<span className="nav-mobile-toggle" onClick={() => setIsMenuOpen(true)}>
+				<span className="nav-mobile-toggle showAndEnterFromUp" onClick={() => setIsMenuOpen(true)}>
 					menu.
 				</span>
 
