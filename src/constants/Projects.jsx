@@ -108,7 +108,7 @@ export const PROJECTS = [
 		title: "Design Portfolio",
 		description:
 			"All of the designs I've coded personally in order to practice my front-end skills or just try learning new tools.",
-		stack: ["REACT", "HTML", "CSS (SCSS)", "JS"],
+		stack: ["React", "HTML", "CSS (SCSS)", "JS"],
 		links: [
 			{
 				url: ROUTES.DESIGNS,

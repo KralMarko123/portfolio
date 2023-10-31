@@ -13,6 +13,8 @@
 
 	display: flex;
 	justify-content: space-between;
+
+	opacity: 0;
 }
 
 .designs-info-left {
@@ -80,6 +82,8 @@
 
 	overflow: hidden;
 	transition: all 0.25s ease-in-out;
+
+	opacity: 0;
 }
 
 .design a {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 import "./Project.css";
 
 const Project = ({
@@ -12,6 +13,7 @@ const Project = ({
 	mobileThumbnail,
 	extraParagraph,
 }) => {
+	const navigate = useNavigate();
 	const [cardRef, cardInView] = useInView({ threshold: 0.5, triggerOnce: true });
 	const [infoRef, infoInView] = useInView({ threshold: 0.5, triggerOnce: true });
 	const [width, setWidth] = useState(window.innerWidth);
@@ -55,8 +57,11 @@ const Project = ({
 							<a
 								className="info-link"
 								key={l.url}
-								href={l.url}
-								target={`${l.internal ? "_self" : "_blank"}`}
+								href={l.internal ? null : l.url}
+								target={l.internal ? null : "_blank"}
+								onClick={() => {
+									if (l.internal) navigate(l.url);
+								}}
 							>
 								{l.text} {l.icon}
 							</a>
