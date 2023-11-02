@@ -8,10 +8,13 @@ const Intro = () => {
 		<section className="intro" id="intro">
 			<div className="intro-top">
 				<div className="intro-text showAndEnterFromLeft" style={{ animationDelay: "0.5s" }}>
-					<h1 className="intro-title">Hi! I'm Marko.</h1>
-					<p>A down-to-earth, calm, determined 24 year old software engineer.</p>
+					<h1 className="intro-title">Hey! I'm Marko.</h1>
 					<p>
-						When I'm not in front of a computer screen, I teach dance and play pool. I am currently
+						A down-to-earth and hardworking software engineer. I love working with new tools and
+						thrive when given a challenge.
+					</p>
+					<p>
+						When I am not in front of a computer screen, I teach dance and play pool. I am currently
 						a senior technician at{" "}
 						<a href="https://www.endava.com/en/about/locations/adriatic/skopje" target="_blank">
 							Endava

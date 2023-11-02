@@ -22,14 +22,14 @@ export const PROJECTS = [
 		thumbnail: postsByMarkoThumbnail,
 		mobileThumbnail: postsByMarkoMobileThumbnail,
 		extraParagraph:
-			"I plan on using this project in the near future. Source code or demos can be shown upon request!",
+			"The project above will be used in the near future and is available for a closer look upon request!",
 	},
 
 	{
 		id: "reactChallenges",
 		title: "React Challenges",
 		description:
-			"A collection of different challenges written in React. Point of the site is for me to have a space to practice different skills/solutions explicitly in React.",
+			"A collection of diverse challenges written in React. The purpose of the site is to provide a space for me to enhance my skills and problem solving in React.",
 		stack: ["React", "CSS"],
 		links: [
 			{
@@ -107,7 +107,7 @@ export const PROJECTS = [
 		id: "designs",
 		title: "Design Portfolio",
 		description:
-			"All of the designs I've coded personally in order to practice my front-end skills or just try learning new tools.",
+			"Numerous challenges and designs I have coded personally in order to better my frontend skills or pick up new tools.",
 		stack: ["React", "HTML", "CSS (SCSS)", "JS"],
 		links: [
 			{
