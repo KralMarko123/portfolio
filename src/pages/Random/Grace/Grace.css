@@ -12,6 +12,12 @@
 	border: var(--simple-border);
 	box-shadow: var(--simple-shadow);
 	border-radius: var(--card-radius);
+
+	cursor: pointer;
+}
+
+.grace-skeleton:hover {
+	opacity: 0.85;
 }
 
 .grace-description {
