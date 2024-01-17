@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useNavigate } from "react-router-dom";
-import "./Project.css";
+import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom';
+import './Project.css';
 
 const Project = ({
 	id,
@@ -11,7 +11,7 @@ const Project = ({
 	links,
 	thumbnail,
 	mobileThumbnail,
-	extraParagraph,
+	extraParagraph
 }) => {
 	const navigate = useNavigate();
 	const [cardRef, cardInView] = useInView({ threshold: 0.5, triggerOnce: true });
@@ -22,43 +22,44 @@ const Project = ({
 		setWidth(window.innerWidth);
 	};
 	useEffect(() => {
-		window.addEventListener("resize", handleWindowSizeChange);
-		return () => window.removeEventListener("resize", handleWindowSizeChange);
+		window.addEventListener('resize', handleWindowSizeChange);
+		return () => window.removeEventListener('resize', handleWindowSizeChange);
 	}, []);
 
 	const isMobile = width <= 768;
 
 	return (
-		<div id={id} className="project">
-			<div className={`project-card ${cardInView ? "showAndEnterFromDown" : ""}`} ref={cardRef}>
+		<div id={id} className='project'>
+			<div className={`project-card ${cardInView ? 'showAndEnterFromDown' : ''}`} ref={cardRef}>
 				<img
-					className="project-thumbnail"
+					className='project-thumbnail'
 					src={isMobile ? mobileThumbnail : thumbnail}
 					alt={`${title}-thumbnail`}
+					loading='lazy'
 				/>
-				<h1 className="project-title">{title}</h1>
-				<p className="project-description">{description}</p>
+				<h1 className='project-title'>{title}</h1>
+				<p className='project-description'>{description}</p>
 			</div>
-			<div className={`info ${infoInView ? "showAndEnterFromDown" : ""}`} ref={infoRef}>
-				<span className="info-title">// Tech Stack</span>
-				<div className="stack-list">
+			<div className={`info ${infoInView ? 'showAndEnterFromDown' : ''}`} ref={infoRef}>
+				<span className='info-title'>// Tech Stack</span>
+				<div className='stack-list'>
 					{stack.map((s) => {
 						return (
-							<div className="info-stack" key={s}>
+							<div className='info-stack' key={s}>
 								{s}
 							</div>
 						);
 					})}
 				</div>
-				<span className="info-title">// Check it out</span>
+				<span className='info-title'>// Check it out</span>
 				{links.length > 0 && (
-					<div className="info-links">
+					<div className='info-links'>
 						{links.map((l) => (
 							<a
-								className="info-link"
+								className='info-link'
 								key={l.url}
 								href={l.internal ? null : l.url}
-								target={l.internal ? null : "_blank"}
+								target={l.internal ? null : '_blank'}
 								onClick={() => {
 									if (l.internal) navigate(l.url);
 								}}
@@ -68,7 +69,7 @@ const Project = ({
 						))}
 					</div>
 				)}
-				{extraParagraph && <p className="info-paragraph">{extraParagraph}</p>}
+				{extraParagraph && <p className='info-paragraph'>{extraParagraph}</p>}
 			</div>
 		</div>
 	);

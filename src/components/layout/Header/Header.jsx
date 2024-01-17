@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import "./Header.css";
+import React, { useState } from 'react';
+import './Header.css';
 
-const NAV_TITLES = ["projects", "tools", "bio", "contact"];
+const NAV_TITLES = ['projects', 'tools', 'bio', 'contact'];
 
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<header className="header">
-			<nav className="nav showAndEnterFromUp">
+		<header className='header'>
+			<nav className='nav showAndEnterFromUp'>
 				<div
-					className="nav-brand"
-					onClick={() => document.getElementById("intro").scrollIntoView()}
+					className='nav-brand'
+					onClick={() => document.getElementById('intro').scrollIntoView()}
 				>
 					marko.markovikj
 				</div>
 
-				<ul className="nav-list">
+				<ul className='nav-list'>
 					{NAV_TITLES.map((t) => (
 						<li
 							key={t}
-							className="nav-link"
+							className='nav-link'
 							onClick={() => document.getElementById(t).scrollIntoView()}
 						>
 							{`${t}.`}
@@ -29,24 +29,24 @@ const Header = () => {
 				</ul>
 			</nav>
 
-			<nav className="mobile-nav">
+			<nav className='mobile-nav'>
 				<div
-					className="nav-brand showAndEnterFromUp"
-					onClick={() => document.getElementById("intro").scrollIntoView()}
+					className='nav-brand showAndEnterFromUp'
+					onClick={() => document.getElementById('intro').scrollIntoView()}
 				>
 					marko.markovikj
 				</div>
 
-				<span className="nav-mobile-toggle showAndEnterFromUp" onClick={() => setIsMenuOpen(true)}>
+				<span className='nav-mobile-toggle showAndEnterFromUp' onClick={() => setIsMenuOpen(true)}>
 					menu.
 				</span>
 
-				<div className={`nav-overlay ${isMenuOpen ? "open" : ""}`}>
-					<ul className="nav-list">
+				<div className={`nav-overlay ${isMenuOpen ? 'open' : ''}`}>
+					<ul className='nav-list'>
 						{NAV_TITLES.map((t) => (
 							<li
 								key={t}
-								className="nav-link"
+								className='nav-link'
 								onClick={() => {
 									document.getElementById(t).scrollIntoView();
 									setIsMenuOpen(false);
@@ -56,7 +56,7 @@ const Header = () => {
 							</li>
 						))}
 
-						<span className="nav-mobile-toggle" onClick={() => setIsMenuOpen(false)}>
+						<span className='nav-mobile-toggle' onClick={() => setIsMenuOpen(false)}>
 							close.
 						</span>
 					</ul>
