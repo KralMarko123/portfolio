@@ -15,7 +15,7 @@ const Intro = () => {
 					</p>
 					<p>
 						When I am not in front of a computer screen, I teach dance and play pool. I am currently
-						a senior technician at{' '}
+						a developer at{' '}
 						<a href='https://www.endava.com/en/about/locations/adriatic/skopje' target='_blank'>
 							Endava
 						</a>
