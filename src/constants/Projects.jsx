@@ -8,6 +8,8 @@ import designsThumbnail from "../assets/images/projects thumbnails/designsThumbn
 import designsMobileThumbnail from "../assets/images/projects thumbnails/designsMobileThumbnail.jpg";
 import reactChallengesThumbnail from "../assets/images/projects thumbnails/reactChallengesThumbnail.jpg";
 import reactChallengesMobileThumbnail from "../assets/images/projects thumbnails/reactChallengesMobileThumbnail.jpg";
+import leetcodeSolutionsThumbnail from "../assets/images/projects thumbnails/leetcodeSolutionsThumbnail.png";
+import leetcodeSolutionsMobileThumbnail from "../assets/images/projects thumbnails/leetcodeSolutionsMobileThumbnail.png";
 import { FaCamera, FaGithub, FaLink } from "react-icons/fa";
 import { ROUTES } from "./ROUTES";
 
@@ -59,6 +61,28 @@ export const PROJECTS = [
     ],
     thumbnail: reactChallengesThumbnail,
     mobileThumbnail: reactChallengesMobileThumbnail,
+  },
+
+  {
+    id: "leetcodeSolutions",
+    title: "Leetcode Solutions",
+    description:
+      "A page containing solutions I've written for leetcode problems. The purpose of this page is to showcase my personal approach when coming up against these problems, and how I incorporate my problem-solving skills to finish them.",
+    stack: ["React", "CSS", "C#"],
+    links: [
+      {
+        url: "https://github.com/KralMarko123/leetcode-solutions",
+        text: "See the code",
+        icon: <FaGithub />,
+      },
+      {
+        url: "https://kralmarko123.github.io/leetcode-solutions/",
+        text: "Visit the site",
+        icon: <FaLink />,
+      },
+    ],
+    thumbnail: leetcodeSolutionsThumbnail,
+    mobileThumbnail: leetcodeSolutionsMobileThumbnail,
   },
 
   {

@@ -1,158 +1,134 @@
-import advideGeneratorThumbnail from '../assets/images/designs thumbnails/adviceGeneratorThumbnail.jpg';
-import introSectionThumbnail from '../assets/images/designs thumbnails/introsectionThumbnail.jpg';
-import interactiveRatingThumbnail from '../assets/images/designs thumbnails/interactiveRatingThumbnail.jpg';
-import timeTrackingThumbnail from '../assets/images/designs thumbnails/timeTrackingThumbnail.jpg';
-import articleThumbnail from '../assets/images/designs thumbnails/articleThumbnail.jpg';
-import baseApparelThumbnail from '../assets/images/designs thumbnails/baseApparelThumbnail.jpg';
-import coolloginThumbnail from '../assets/images/designs thumbnails/coolloginThumbnail.jpg';
-import comingsoonThumbnail from '../assets/images/designs thumbnails/comingsoonThumbnail.jpg';
-import fourcardThumbnail from '../assets/images/designs thumbnails/fourcardThumbnail.jpg';
-import faqaccordionThumbnail from '../assets/images/designs thumbnails/faqaccordionThumbnail.jpg';
-import huddleThumbnail from '../assets/images/designs thumbnails/huddleThumbnail.jpg';
-import introsignupThumbnail from '../assets/images/designs thumbnails/introsignupThumbnail.jpg';
-import nftThumbnail from '../assets/images/designs thumbnails/nftThumbnail.jpg';
-import qrThumbnail from '../assets/images/designs thumbnails/qrcodeThumbnail.jpg';
-import profileCardThumbnail from '../assets/images/designs thumbnails/profilecardThumbnail.jpg';
-import orderSummaryThumbnail from '../assets/images/designs thumbnails/ordersummaryThumbnail.jpg';
-import socialProofThumbnail from '../assets/images/designs thumbnails/socialproofThumbnail.jpg';
-import statsPreviewThumbnail from '../assets/images/designs thumbnails/statspreviewThumbnail.jpg';
-import sunnysideThumbnail from '../assets/images/designs thumbnails/sunnysideThumbnail.jpg';
-import threeColumnThumbnail from '../assets/images/designs thumbnails/threecolumnThumbnail.jpg';
-import orkaThumbnail from '../assets/images/designs thumbnails/orkaThumbnail.jpg';
-import notificationsThumbnail from '../assets/images/designs thumbnails/notificationsThumbnail.jpg';
+import advideGeneratorThumbnail from "../assets/images/designs thumbnails/adviceGeneratorThumbnail.jpg";
+import introSectionThumbnail from "../assets/images/designs thumbnails/introsectionThumbnail.jpg";
+import interactiveRatingThumbnail from "../assets/images/designs thumbnails/interactiveRatingThumbnail.jpg";
+import timeTrackingThumbnail from "../assets/images/designs thumbnails/timeTrackingThumbnail.jpg";
+import articleThumbnail from "../assets/images/designs thumbnails/articleThumbnail.jpg";
+import baseApparelThumbnail from "../assets/images/designs thumbnails/baseApparelThumbnail.jpg";
+import coolloginThumbnail from "../assets/images/designs thumbnails/coolloginThumbnail.jpg";
+import comingsoonThumbnail from "../assets/images/designs thumbnails/comingsoonThumbnail.jpg";
+import fourcardThumbnail from "../assets/images/designs thumbnails/fourcardThumbnail.jpg";
+import faqaccordionThumbnail from "../assets/images/designs thumbnails/faqaccordionThumbnail.jpg";
+import huddleThumbnail from "../assets/images/designs thumbnails/huddleThumbnail.jpg";
+import introsignupThumbnail from "../assets/images/designs thumbnails/introsignupThumbnail.jpg";
+import nftThumbnail from "../assets/images/designs thumbnails/nftThumbnail.jpg";
+import qrThumbnail from "../assets/images/designs thumbnails/qrcodeThumbnail.jpg";
+import profileCardThumbnail from "../assets/images/designs thumbnails/profilecardThumbnail.jpg";
+import orderSummaryThumbnail from "../assets/images/designs thumbnails/ordersummaryThumbnail.jpg";
+import socialProofThumbnail from "../assets/images/designs thumbnails/socialproofThumbnail.jpg";
+import statsPreviewThumbnail from "../assets/images/designs thumbnails/statspreviewThumbnail.jpg";
+import sunnysideThumbnail from "../assets/images/designs thumbnails/sunnysideThumbnail.jpg";
+import threeColumnThumbnail from "../assets/images/designs thumbnails/threecolumnThumbnail.jpg";
+import orkaThumbnail from "../assets/images/designs thumbnails/orkaThumbnail.jpg";
+import notificationsThumbnail from "../assets/images/designs thumbnails/notificationsThumbnail.jpg";
 
-const DESIGNS_BASE_URL = 'https://designs.markomarkovikj.com';
+const DESIGNS_BASE_URL = "https://kralmarko123.github.io/frontend-portfolio";
 
 export const DESIGNS = [
-	{
-		title: 'Time Tracking Dashboard',
-		link: `${DESIGNS_BASE_URL}/timetrackingdashboard`,
-		thumbnail: timeTrackingThumbnail
-	},
+  {
+    title: "Time Tracking Dashboard",
+    link: `${DESIGNS_BASE_URL}/time-tracking-dashboard-main/index.html`,
+    thumbnail: timeTrackingThumbnail,
+  },
 
-	{
-		title: 'Snap Intro Section',
-		link: `${DESIGNS_BASE_URL}/introsection`,
-		thumbnail: introSectionThumbnail
-	},
+  {
+    title: "Base Apparel",
+    link: `${DESIGNS_BASE_URL}/baseApparelComingSoonMaster/index.html`,
+    thumbnail: baseApparelThumbnail,
+  },
 
-	{
-		title: 'Advice Generator',
-		link: `${DESIGNS_BASE_URL}/advicegenerator`,
-		thumbnail: advideGeneratorThumbnail
-	},
+  {
+    title: "Article Preview",
+    link: `${DESIGNS_BASE_URL}/articlePreviewComponentMaster/index.html`,
+    thumbnail: articleThumbnail,
+  },
 
-	{
-		title: 'Notifications page',
-		link: `${DESIGNS_BASE_URL}/notifications`,
-		thumbnail: notificationsThumbnail
-	},
+  {
+    title: "Cool Login Form",
+    link: `${DESIGNS_BASE_URL}/coolLoginForm/index.html`,
+    thumbnail: coolloginThumbnail,
+  },
 
-	{
-		title: 'Base Apparel',
-		link: `${DESIGNS_BASE_URL}/baseapparel`,
-		thumbnail: baseApparelThumbnail
-	},
+  {
+    title: "Ping Coming Soon",
+    link: `${DESIGNS_BASE_URL}/pingComingSoonPage/index.html`,
+    thumbnail: comingsoonThumbnail,
+  },
 
-	{
-		title: 'Article Preview',
-		link: `${DESIGNS_BASE_URL}/articlepreview`,
-		thumbnail: articleThumbnail
-	},
+  {
+    title: "Four Card Feature",
+    link: `${DESIGNS_BASE_URL}/fourCardFeatureSectionMaster/index.html`,
+    thumbnail: fourcardThumbnail,
+  },
 
-	{
-		title: 'Interactive Rating Component',
-		link: `${DESIGNS_BASE_URL}/interactiverating`,
-		thumbnail: interactiveRatingThumbnail
-	},
+  {
+    title: "Faq Accordion",
+    link: `${DESIGNS_BASE_URL}/faqAccordionCardMain/index.html`,
+    thumbnail: faqaccordionThumbnail,
+  },
 
-	{
-		title: 'Cool Login Form',
-		link: `${DESIGNS_BASE_URL}/coolloginform`,
-		thumbnail: coolloginThumbnail
-	},
+  {
+    title: "Huddle Landing",
+    link: `${DESIGNS_BASE_URL}/huddleLandingPage/index.html`,
+    thumbnail: huddleThumbnail,
+  },
 
-	{
-		title: 'Ping Coming Soon',
-		link: `${DESIGNS_BASE_URL}/pingcomingsoon`,
-		thumbnail: comingsoonThumbnail
-	},
+  {
+    title: "Intro Signup Form",
+    link: `${DESIGNS_BASE_URL}/introComponentWithSignupForm/index.html`,
+    thumbnail: introsignupThumbnail,
+  },
 
-	{
-		title: 'Four Card Feature',
-		link: `${DESIGNS_BASE_URL}/fourcardfeature`,
-		thumbnail: fourcardThumbnail
-	},
+  {
+    title: "NFT Component",
+    link: `${DESIGNS_BASE_URL}/nft-preview-card-component-main/index.html`,
+    thumbnail: nftThumbnail,
+  },
 
-	{
-		title: 'Faq Accordion',
-		link: `${DESIGNS_BASE_URL}/faqaccordion`,
-		thumbnail: faqaccordionThumbnail
-	},
+  {
+    title: "QR Code Component",
+    link: `${DESIGNS_BASE_URL}/qr-code-component-main/index.html`,
+    thumbnail: qrThumbnail,
+  },
 
-	{
-		title: 'Huddle Landing',
-		link: `${DESIGNS_BASE_URL}/huddlelanding`,
-		thumbnail: huddleThumbnail
-	},
+  {
+    title: "Profile Card Component",
+    link: `${DESIGNS_BASE_URL}/profileCardComponent/index.html`,
+    thumbnail: profileCardThumbnail,
+  },
 
-	{
-		title: 'Intro Signup Form',
-		link: `${DESIGNS_BASE_URL}/introsignup`,
-		thumbnail: introsignupThumbnail
-	},
+  {
+    title: "Order Summary",
+    link: `${DESIGNS_BASE_URL}/orderSummaryComponent/index.html`,
+    thumbnail: orderSummaryThumbnail,
+  },
 
-	{
-		title: 'NFT Component',
-		link: `${DESIGNS_BASE_URL}/nftpreview`,
-		thumbnail: nftThumbnail
-	},
+  {
+    title: "Social Proof",
+    link: `${DESIGNS_BASE_URL}/socialProofSectionMaster/index.html`,
+    thumbnail: socialProofThumbnail,
+  },
 
-	{
-		title: 'QR Code Component',
-		link: `${DESIGNS_BASE_URL}/qrcode`,
-		thumbnail: qrThumbnail
-	},
+  {
+    title: "Stats Preview",
+    link: `${DESIGNS_BASE_URL}/statsPreviewCardComponent/index.html`,
+    thumbnail: statsPreviewThumbnail,
+  },
 
-	{
-		title: 'Profile Card Component',
-		link: `${DESIGNS_BASE_URL}/profilecard`,
-		thumbnail: profileCardThumbnail
-	},
+  {
+    title: "Sunnyside Agency",
+    link: `${DESIGNS_BASE_URL}/sunnyside-agency-landing-page-main/sunnyside-agency-landing-page-main/index.html`,
+    thumbnail: sunnysideThumbnail,
+  },
 
-	{
-		title: 'Order Summary',
-		link: `${DESIGNS_BASE_URL}/ordersummary`,
-		thumbnail: orderSummaryThumbnail
-	},
+  {
+    title: "Three Column Preview",
+    link: `${DESIGNS_BASE_URL}/threeColumnPreviewComponent/index.html`,
+    thumbnail: threeColumnThumbnail,
+  },
 
-	{
-		title: 'Social Proof',
-		link: `${DESIGNS_BASE_URL}/socialproof`,
-		thumbnail: socialProofThumbnail
-	},
-
-	{
-		title: 'Stats Preview',
-		link: `${DESIGNS_BASE_URL}/statspreview`,
-		thumbnail: statsPreviewThumbnail
-	},
-
-	{
-		title: 'Sunnyside Agency',
-		link: `${DESIGNS_BASE_URL}/sunnysideagency`,
-		thumbnail: sunnysideThumbnail
-	},
-
-	{
-		title: 'Three Column Preview',
-		link: `${DESIGNS_BASE_URL}/threecolumnpreview`,
-		thumbnail: threeColumnThumbnail
-	},
-
-	{
-		title: 'Orka Menu',
-		link: `http://orka.mk/`,
-		thumbnail: orkaThumbnail
-	}
+  {
+    title: "Orka Menu",
+    link: `http://orka.mk/`,
+    thumbnail: orkaThumbnail,
+  },
 ];
