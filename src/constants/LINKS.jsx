@@ -1,6 +1,5 @@
 import { FaMailBulk, FaGithub, FaLinkedin } from "react-icons/fa";
 import { TbFileCv } from "react-icons/tb";
-import markoCV from "../assets/pdfs/Marko Markovikj CV.pdf";
 
 export const CONTACT_LINKS = [
   {
@@ -19,7 +18,7 @@ export const CONTACT_LINKS = [
   },
 
   {
-    link: markoCV,
+    link: "/Marko Markovikj CV.pdf",
     icon: <TbFileCv />,
   },
 ];
