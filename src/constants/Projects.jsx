@@ -18,7 +18,7 @@ export const PROJECTS = [
     id: "postsByMarko",
     title: "Posts By Marko",
     description:
-      "A project I work on consistently trying to add features mimicking the SDLC. It is a post sharing website where users can register, share posts and see each others changes in real time using SignalR.",
+      "A project I work on consistently trying to add features mimicking the SDLC. It is a post sharing website where users can register, share posts, chat and see each others changes in real time using SignalR.",
     stack: [
       ".NET",
       "C#",
@@ -38,7 +38,6 @@ export const PROJECTS = [
     ],
     thumbnail: postsByMarkoThumbnail,
     mobileThumbnail: postsByMarkoMobileThumbnail,
-    extraParagraph: "This project will be live soon!",
   },
 
   {
