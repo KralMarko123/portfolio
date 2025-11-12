@@ -10,6 +10,8 @@ import reactChallengesThumbnail from "../assets/images/projects thumbnails/react
 import reactChallengesMobileThumbnail from "../assets/images/projects thumbnails/reactChallengesMobileThumbnail.jpg";
 import leetcodeSolutionsThumbnail from "../assets/images/projects thumbnails/leetcodeSolutionsThumbnail.png";
 import leetcodeSolutionsMobileThumbnail from "../assets/images/projects thumbnails/leetcodeSolutionsMobileThumbnail.png";
+import trackerThumbnail from "../assets/images/projects thumbnails/trackerThumbnail.png";
+import trackerMobileThumbnail from "../assets/images/projects thumbnails/trackerMobileThumbnail.png";
 import { FaCamera, FaGithub, FaLink } from "react-icons/fa";
 import { ROUTES } from "./ROUTES";
 
@@ -38,6 +40,35 @@ export const PROJECTS = [
     ],
     thumbnail: postsByMarkoThumbnail,
     mobileThumbnail: postsByMarkoMobileThumbnail,
+  },
+
+  {
+    id: "tracker",
+    title: "MindLeaps Tracker",
+    description:
+      "A data-driven Monitoring & Evaluation (M&E) system that measures changes in cognitive skills and social-emotional learning. ",
+    stack: [
+      "Ruby on Rails",
+      "Stimulus",
+      "Capybara",
+      "Tailwind",
+      "Kotlin",
+      "Android",
+    ],
+    links: [
+      {
+        url: "https://github.com/MindLeaps/tracker",
+        text: "See the code",
+        icon: <FaGithub />,
+      },
+      {
+        url: "https://mindleapstracker.org/",
+        text: "Visit the site",
+        icon: <FaLink />,
+      },
+    ],
+    thumbnail: trackerThumbnail,
+    mobileThumbnail: trackerMobileThumbnail,
   },
 
   {
