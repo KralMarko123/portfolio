@@ -13,7 +13,7 @@ import leetcodeSolutionsMobileThumbnail from "../assets/images/projects thumbnai
 import trackerThumbnail from "../assets/images/projects thumbnails/trackerThumbnail.png";
 import trackerMobileThumbnail from "../assets/images/projects thumbnails/trackerMobileThumbnail.png";
 import { FaCamera, FaGithub, FaLink } from "react-icons/fa";
-import { ROUTES } from "./ROUTES";
+import { ROUTES } from "./Routes";
 
 export const PROJECTS = [
   {
@@ -21,21 +21,17 @@ export const PROJECTS = [
     title: "Posts By Marko",
     description:
       "A project I work on consistently trying to add features mimicking the SDLC. It is a post sharing website where users can register, share posts, chat and see each others changes in real time using SignalR.",
-    stack: [
-      ".NET",
-      "C#",
-      "EF",
-      "xUnit",
-      "PlayWright",
-      "React",
-      "CSS",
-      "Docker",
-    ],
+    stack: [".NET", "C#", "EF", "xUnit", "PlayWright", "React", "CSS", "Docker"],
     links: [
       {
         url: "https://github.com/KralMarko123/PostsByMarko",
         text: "See the code",
         icon: <FaGithub />,
+      },
+      {
+        url: "https://posts.markomarkovikj.com",
+        text: "Visit the site",
+        icon: <FaLink />,
       },
     ],
     thumbnail: postsByMarkoThumbnail,
@@ -47,14 +43,7 @@ export const PROJECTS = [
     title: "MindLeaps Tracker",
     description:
       "A data-driven Monitoring & Evaluation (M&E) system that measures changes in cognitive skills and social-emotional learning. ",
-    stack: [
-      "Ruby on Rails",
-      "Stimulus",
-      "Capybara",
-      "Tailwind",
-      "Kotlin",
-      "Android",
-    ],
+    stack: ["Ruby on Rails", "Stimulus", "Capybara", "Tailwind", "Kotlin", "Android"],
     links: [
       {
         url: "https://github.com/MindLeaps/tracker",

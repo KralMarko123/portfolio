@@ -1,21 +1,28 @@
 export const BIOS = [
   {
-    year: 1999,
+    start: 1999,
     text: "Born in Skopje, Macedonia",
   },
 
   {
-    year: 2018,
-    text: "Finished High School and started studies at the Faculty of Computer Science and Engineering",
+    start: 2014,
+    end: 2018,
+    text: "Completed high school at 'Orce Nikolov', Skopje, Macedonia",
   },
 
   {
-    year: 2021,
-    text: "Started at Endava as an automation engineer",
+    start: 2018,
+    end: 2025,
+    text: "Obtained a Bachelor's degree in Computer Science at 'Ss. Cyril and Methodius University', Skopje, Macedonia",
   },
 
   {
-    year: 2023,
-    text: "Started as a software engineer for the organization MindLeaps",
+    start: 2021,
+    text: "Began work as a software developer at Endava",
+  },
+
+  {
+    start: 2023,
+    text: "Started contractual engineering services for the organization MindLeaps",
   },
 ];

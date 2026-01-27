@@ -1,6 +1,3 @@
-import advideGeneratorThumbnail from "../assets/images/designs thumbnails/adviceGeneratorThumbnail.jpg";
-import introSectionThumbnail from "../assets/images/designs thumbnails/introsectionThumbnail.jpg";
-import interactiveRatingThumbnail from "../assets/images/designs thumbnails/interactiveRatingThumbnail.jpg";
 import timeTrackingThumbnail from "../assets/images/designs thumbnails/timeTrackingThumbnail.jpg";
 import articleThumbnail from "../assets/images/designs thumbnails/articleThumbnail.jpg";
 import baseApparelThumbnail from "../assets/images/designs thumbnails/baseApparelThumbnail.jpg";
@@ -19,7 +16,6 @@ import statsPreviewThumbnail from "../assets/images/designs thumbnails/statsprev
 import sunnysideThumbnail from "../assets/images/designs thumbnails/sunnysideThumbnail.jpg";
 import threeColumnThumbnail from "../assets/images/designs thumbnails/threecolumnThumbnail.jpg";
 import orkaThumbnail from "../assets/images/designs thumbnails/orkaThumbnail.jpg";
-import notificationsThumbnail from "../assets/images/designs thumbnails/notificationsThumbnail.jpg";
 
 const DESIGNS_BASE_URL = "https://kralmarko123.github.io/frontend-portfolio";
 

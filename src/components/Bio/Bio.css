@@ -1,42 +1,42 @@
 .bio {
-	width: 100%;
-	margin-bottom: var(--md-margin);
+  width: 100%;
+  margin-bottom: var(--md-margin);
 
-	display: flex;
-	flex-direction: column;
-	gap: var(--md-gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--md-gap);
 }
 
 .bio-title {
-	width: fit-content;
-	padding: 0 var(--s-padding);
-	background-color: var(--dark-accent);
+  width: fit-content;
+  padding: 0 var(--s-padding);
+  background-color: var(--dark-accent);
 
-	color: var(--light-accent);
-	font-weight: bold;
-	font-size: var(--xl-text);
+  color: var(--light-accent);
+  font-weight: bold;
+  font-size: var(--xl-text);
 
-	opacity: 0;
+  opacity: 0;
 }
 
 .bio-row {
-	display: flex;
-	align-items: center;
-	gap: var(--lg-gap);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-	font-size: var(--md-text);
-	text-align: justify;
+  font-size: var(--s-text);
+  text-align: justify;
 
-	opacity: 0;
+  opacity: 0;
 }
 
 .bio-year {
-	color: var(--light-accent);
-	font-size: var(--lg-text);
+  color: var(--light-accent);
+  font-size: var(--lg-text);
 }
 
 @media (max-width: 768px) {
-	.bio-row {
-		font-size: var(--s-text);
-	}
+  .bio-row {
+    font-size: var(--s-text);
+  }
 }
