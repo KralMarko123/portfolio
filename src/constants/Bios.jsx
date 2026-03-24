@@ -18,11 +18,17 @@ export const BIOS = [
 
   {
     start: 2021,
-    text: "Began work as a software developer at Endava",
+    end: 2026,
+    text: "Worked as a software engineer at Endava",
   },
 
   {
     start: 2023,
     text: "Started contractual engineering services for the organization MindLeaps",
+  },
+
+  {
+    start: 2026,
+    text: "Started work as a software developer at Hornetsecurity",
   },
 ];

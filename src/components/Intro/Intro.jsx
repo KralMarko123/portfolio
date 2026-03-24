@@ -19,10 +19,10 @@ const Intro = () => {
             When I am not in front of a computer screen, I teach dance and play the drums.
             I am currently a developer at{" "}
             <a
-              href="https://www.endava.com/en/about/locations/adriatic/skopje"
+              href="https://www.hornetsecurity.com/en/"
               target="_blank"
             >
-              Endava
+              Hornetsecurity
             </a>
             .
           </p>
