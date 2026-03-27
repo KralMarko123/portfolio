@@ -20,23 +20,38 @@
 }
 
 .bio-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--lg-gap);
 
   font-size: var(--s-text);
-  text-align: justify;
-
   opacity: 0;
 }
 
 .bio-year {
+  width: fit-content;
   color: var(--light-accent);
-  font-size: var(--lg-text);
+  font-size: var(--md-text);
+  font-weight: 600;
+  background-color: var(--dark-accent);
+  padding: var(--s-padding);
+  border-radius: var(--card-radius);
+  gap: var(--s-gap);
 }
 
 @media (max-width: 768px) {
   .bio-row {
+    grid-template-columns: 1fr;
+    gap: var(--s-gap);
     font-size: var(--s-text);
+    text-align: center;
+
+    margin: var(--md-gap) 0;
+  }
+
+  .bio-year {
+    width: 100%;
+    place-self: center;
+    text-align: center;
   }
 }
